@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>智能排版系统实现思路</title>
+      <link href="/article/1.html"/>
+      <url>/article/1.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>智能排班</title>
+      <link href="/article/16050.html"/>
+      <url>/article/16050.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="数据层"><a href="#数据层" class="headerlink" title="数据层"></a>数据层</h1><h2 id="Mybatisplus"><a href="#Mybatisplus" class="headerlink" title="Mybatisplus"></a>Mybatisplus</h2><h3 id="表名与实体类名设置"><a href="#表名与实体类名设置" class="headerlink" title="表名与实体类名设置"></a>表名与实体类名设置</h3><h4 id="使用-TableFiled-注解"><a href="#使用-TableFiled-注解" class="headerlink" title="使用 @TableFiled 注解"></a>使用 @TableFiled 注解</h4><table><thead><tr><th>名称</th><th>@TableField</th></tr></thead><tbody><tr><td>类型</td><td>&#x3D;&#x3D;属性注解&#x3D;&#x3D;</td></tr><tr><td>位置</td><td>模型类属性定义上方</td></tr><tr><td>作用</td><td>设置当前属性对应的数据库表中的字段关系</td></tr><tr><td>相关属性</td><td>value(默认)：设置数据库表字段名称<br/>exist:设置属性在数据库表字段中是否存在，默认为true，此属性不能与value合并使用<br/>select:设置属性是否参与查询，此属性与select()映射配置不冲突</td></tr></tbody></table><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@TableField(value = &quot;pwd&quot;, select = false)</span></span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@TableField(exits = false)</span></span><br><span class="line">    <span class="keyword">private</span> Integer online;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="使用-TableName-注解"><a href="#使用-TableName-注解" class="headerlink" title="使用 @TableName 注解"></a>使用 @TableName 注解</h4><table><thead><tr><th>名称</th><th>@TableName</th></tr></thead><tbody><tr><td>类型</td><td>&#x3D;&#x3D;类注解&#x3D;&#x3D;</td></tr><tr><td>位置</td><td>模型类定义上方</td></tr><tr><td>作用</td><td>设置当前类对应于数据库表关系</td></tr><tr><td>相关属性</td><td>value(默认)：设置数据库表名称</td></tr></tbody></table><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@TableName(&quot;tbl_user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="简化-Tabled-注解"><a href="#简化-Tabled-注解" class="headerlink" title="简化 @Tabled 注解"></a>简化 @Tabled 注解</h4><p>我们只需在配置文件中添加如下内容:</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mybatis-plus:</span></span><br><span class="line">  <span class="attr">global-config:</span></span><br><span class="line">    <span class="attr">db-config:</span></span><br><span class="line">    <span class="attr">id-type:</span> <span class="string">assign_id</span></span><br></pre></td></tr></table></figure><p>配置完成后，每个模型类的主键ID策略都将成为assign_id.</p><h4 id="简化-TableName-注解"><a href="#简化-TableName-注解" class="headerlink" title="简化 @TableName 注解"></a>简化 @TableName 注解</h4><p>在 <code>yml</code> 配置文件中配置如下内容:</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mybatis-plus:</span></span><br><span class="line">  <span class="attr">global-config:</span></span><br><span class="line">    <span class="attr">db-config:</span></span><br><span class="line">    <span class="attr">table-prefix:</span> <span class="string">tbl_</span></span><br></pre></td></tr></table></figure><p>设置表的前缀内容，这样MP就会拿 <code>tbl_</code>加上模型类的首字母小写，就刚好组装成数据库的表名。</p><h3 id="Id-生成策略"><a href="#Id-生成策略" class="headerlink" title="Id 生成策略"></a>Id 生成策略</h3><h4 id="使用-Tabled-注解"><a href="#使用-Tabled-注解" class="headerlink" title="使用 @Tabled 注解"></a>使用 @Tabled 注解</h4><table><thead><tr><th>名称</th><th>@TableId</th></tr></thead><tbody><tr><td>类型</td><td>&#x3D;&#x3D;属性注解&#x3D;&#x3D;</td></tr><tr><td>位置</td><td>模型类中用于表示主键的属性定义上方</td></tr><tr><td>作用</td><td>设置当前类中主键属性的生成策略</td></tr><tr><td>相关属性</td><td>value(默认)：设置数据库表主键名称<br/>type:设置主键属性的生成策略，值查照IdType的枚举值</td></tr></tbody></table><h5 id="策略类型-（type-x3D-？）"><a href="#策略类型-（type-x3D-？）" class="headerlink" title="策略类型 （type &#x3D; ？）"></a>策略类型 （type &#x3D; ？）</h5><ul><li>AUTO：自增</li></ul><ul><li>NONE: 不设置id生成策略</li><li>INPUT: 用户手工输入id</li><li><strong>ASSIGN_ID:</strong> 雪花算法生成id(可兼容数值型与字符串型)</li><li>ASSIGN_UUID: 以UUID生成算法作为id生成策略</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@TableName(&quot;tbl_user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="meta">@TableId(type = IdType.AUTO)</span></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="meta">@TableField(value=&quot;pwd&quot;,select=false)</span></span><br><span class="line">    <span class="keyword">private</span> String password;</span><br></pre></td></tr></table></figure><h5 id="Id-生成策略对比"><a href="#Id-生成策略对比" class="headerlink" title="Id 生成策略对比"></a>Id 生成策略对比</h5><ul><li>NONE: 不设置id生成策略，MP不自动生成，约等于INPUT,所以这两种方式都需要用户手动设置，但是手动设置第一个问题是容易出现相同的ID造成主键冲突，为了保证主键不冲突就需要做很多判定，实现起来比较复杂</li><li>AUTO:数据库ID自增,这种策略适合在数据库服务器只有1台的情况下使用,不可作为分布式ID使用</li><li>ASSIGN_UUID:可以在分布式的情况下使用，而且能够保证唯一，但是生成的主键是32位的字符串，长度过长占用空间而且还不能排序，查询性能也慢</li><li>ASSIGN_ID:可以在分布式的情况下使用，生成的是Long类型的数字，可以排序性能也高，但是生成的策略和服务器时间有关，如果修改了系统时间就有可能导致出现重复主键</li><li>综上所述，每一种主键策略都有自己的优缺点，根据自己项目业务的实际情况来选择使用才是最明智的选择。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux</title>
       <link href="/article/15691.html"/>
       <url>/article/15691.html</url>
@@ -153,6 +185,17 @@
     
     
     <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>照片</title>
       <link href="/Gallery/index.html"/>
       <url>/Gallery/index.html</url>
@@ -175,11 +218,11 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;}#page-header {    background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {    background: transparent !important;}#page-header::before {    background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {    background: transparent !important;}[data-theme="dark"] #page-header::before {    background: transparent !important;}/* 小冰分类分类磁铁黑夜模式适配 *//* 一般状态 */[data-theme="dark"] .magnet_link_context {    background: #1e1e1e;    color: antiquewhite;}/* 鼠标悬浮状态 */[data-theme="dark"] .magnet_link_context:hover {    background: #3ecdf1;    color: #f2f2f2;}/*@font-face {    !* 为载入的字体取名字(随意) *!    font-family: 'YSHST';    !* 字体文件地址(相对或者绝对路径都可以) *!    src: url(/font/优设好身体.woff2);    !* 定义加粗样式(加粗多少) *!    font-weight: normal;    !* 定义字体样式(斜体/非斜体) *!    font-style: normal;    !* 定义显示样式 *!    font-display: block;}*//* 翻页按钮居中 */#pagination {    width: 100%;    margin: auto;}/* 一级菜单居中 */#nav .menus_items {    position: absolute !important;    width: fit-content !important;    left: 50% !important;    transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {    display: flex !important;}/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(2) .menus_item_child {    left: -125px;}/* 日间模式不生效 */[data-theme="light"] #site-name,[data-theme="light"] #site-title,[data-theme="light"] #site-subtitle,[data-theme="light"] #post-info {    animation: none;}/* 夜间模式生效 */[data-theme="dark"] #site-name,[data-theme="dark"] #site-title {    animation: light_15px 10s linear infinite;}[data-theme="dark"] #site-subtitle {    animation: light_10px 10s linear infinite;}[data-theme="dark"] #post-info {    animation: light_5px 10s linear infinite;}/* 关键帧描述 */@keyframes light_15px {    0% {        text-shadow: #5636ed 0 0 15px;    }    12.5% {        text-shadow: #11ee5e 0 0 15px;    }    25% {        text-shadow: #f14747 0 0 15px;    }    37.5% {        text-shadow: #f1a247 0 0 15px;    }    50% {        text-shadow: #f1ee47 0 0 15px;    }    50% {        text-shadow: #b347f1 0 0 15px;    }    62.5% {        text-shadow: #002afa 0 0 15px;    }    75% {        text-shadow: #ed709b 0 0 15px;    }    87.5% {        text-shadow: #39c5bb 0 0 15px;    }    100% {        text-shadow: #5636ed 0 0 15px;    }}@keyframes light_10px {    0% {        text-shadow: #5636ed 0 0 10px;    }    12.5% {        text-shadow: #11ee5e 0 0 10px;    }    25% {        text-shadow: #f14747 0 0 10px;    }    37.5% {        text-shadow: #f1a247 0 0 10px;    }    50% {        text-shadow: #f1ee47 0 0 10px;    }    50% {        text-shadow: #b347f1 0 0 10px;    }    62.5% {        text-shadow: #002afa 0 0 10px;    }    75% {        text-shadow: #ed709b 0 0 10px;    }    87.5% {        text-shadow: #39c5bb 0 0 10px;    }    100% {        text-shadow: #5636ed 0 0 10px;    }}@keyframes light_5px {    0% {        text-shadow: #5636ed 0 0 5px;    }    12.5% {        text-shadow: #11ee5e 0 0 5px;    }    25% {        text-shadow: #f14747 0 0 5px;    }    37.5% {        text-shadow: #f1a247 0 0 15px;    }    50% {        text-shadow: #f1ee47 0 0 5px;    }    50% {        text-shadow: #b347f1 0 0 5px;    }    62.5% {        text-shadow: #002afa 0 0 5px;    }    75% {        text-shadow: #ed709b 0 0 5px;    }    87.5% {        text-shadow: #39c5bb 0 0 5px;    }    100% {        text-shadow: #5636ed 0 0 5px;    }}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {    background: linear-gradient(            -45deg,            #e8d8b9,            #eccec5,            #a3e9eb,            #bdbdf0,            #eec1ea    );    box-shadow: 0 0 5px rgb(66, 68, 68);    position: relative;    background-size: 400% 400%;    -webkit-animation: Gradient 10s ease infinite;    -moz-animation: Gradient 10s ease infinite;    animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {    0% {        background-position: 0% 50%;    }    50% {        background-position: 100% 50%;    }    100% {        background-position: 0% 50%;    }}@-moz-keyframes Gradient {    0% {        background-position: 0% 50%;    }    50% {        background-position: 100% 50%;    }    100% {        background-position: 0% 50%;    }}@keyframes Gradient {    0% {        background-position: 0% 50%;    }    50% {        background-position: 100% 50%;    }    100% {        background-position: 0% 50%;    }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {    background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {    background-color: #3eb8be;    border-radius: 8px;}]]></content>
       
     </entry>
     
@@ -197,11 +240,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
+      <title>轻音，武道馆</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;}#page-header {    background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {    background: transparent !important;}#page-header::before {    background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {    background: transparent !important;}[data-theme="dark"] #page-header::before {    background: transparent !important;}/* 小冰分类分类磁铁黑夜模式适配 *//* 一般状态 */[data-theme="dark"] .magnet_link_context {    background: #1e1e1e;    color: antiquewhite;}/* 鼠标悬浮状态 */[data-theme="dark"] .magnet_link_context:hover {    background: #3ecdf1;    color: #f2f2f2;}/*@font-face {    !* 为载入的字体取名字(随意) *!    font-family: 'YSHST';    !* 字体文件地址(相对或者绝对路径都可以) *!    src: url(/font/优设好身体.woff2);    !* 定义加粗样式(加粗多少) *!    font-weight: normal;    !* 定义字体样式(斜体/非斜体) *!    font-style: normal;    !* 定义显示样式 *!    font-display: block;}*//* 翻页按钮居中 */#pagination {    width: 100%;    margin: auto;}/* 一级菜单居中 */#nav .menus_items {    position: absolute !important;    width: fit-content !important;    left: 50% !important;    transform: translateX(-50%) !important;}/* 子菜单横向展示 */#nav .menus_items .menus_item:hover .menus_item_child {    display: flex !important;}/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(2) .menus_item_child {    left: -125px;}/* 日间模式不生效 */[data-theme="light"] #site-name,[data-theme="light"] #site-title,[data-theme="light"] #site-subtitle,[data-theme="light"] #post-info {    animation: none;}/* 夜间模式生效 */[data-theme="dark"] #site-name,[data-theme="dark"] #site-title {    animation: light_15px 10s linear infinite;}[data-theme="dark"] #site-subtitle {    animation: light_10px 10s linear infinite;}[data-theme="dark"] #post-info {    animation: light_5px 10s linear infinite;}/* 关键帧描述 */@keyframes light_15px {    0% {        text-shadow: #5636ed 0 0 15px;    }    12.5% {        text-shadow: #11ee5e 0 0 15px;    }    25% {        text-shadow: #f14747 0 0 15px;    }    37.5% {        text-shadow: #f1a247 0 0 15px;    }    50% {        text-shadow: #f1ee47 0 0 15px;    }    50% {        text-shadow: #b347f1 0 0 15px;    }    62.5% {        text-shadow: #002afa 0 0 15px;    }    75% {        text-shadow: #ed709b 0 0 15px;    }    87.5% {        text-shadow: #39c5bb 0 0 15px;    }    100% {        text-shadow: #5636ed 0 0 15px;    }}@keyframes light_10px {    0% {        text-shadow: #5636ed 0 0 10px;    }    12.5% {        text-shadow: #11ee5e 0 0 10px;    }    25% {        text-shadow: #f14747 0 0 10px;    }    37.5% {        text-shadow: #f1a247 0 0 10px;    }    50% {        text-shadow: #f1ee47 0 0 10px;    }    50% {        text-shadow: #b347f1 0 0 10px;    }    62.5% {        text-shadow: #002afa 0 0 10px;    }    75% {        text-shadow: #ed709b 0 0 10px;    }    87.5% {        text-shadow: #39c5bb 0 0 10px;    }    100% {        text-shadow: #5636ed 0 0 10px;    }}@keyframes light_5px {    0% {        text-shadow: #5636ed 0 0 5px;    }    12.5% {        text-shadow: #11ee5e 0 0 5px;    }    25% {        text-shadow: #f14747 0 0 5px;    }    37.5% {        text-shadow: #f1a247 0 0 15px;    }    50% {        text-shadow: #f1ee47 0 0 5px;    }    50% {        text-shadow: #b347f1 0 0 5px;    }    62.5% {        text-shadow: #002afa 0 0 5px;    }    75% {        text-shadow: #ed709b 0 0 5px;    }    87.5% {        text-shadow: #39c5bb 0 0 5px;    }    100% {        text-shadow: #5636ed 0 0 5px;    }}/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {    background: linear-gradient(            -45deg,            #e8d8b9,            #eccec5,            #a3e9eb,            #bdbdf0,            #eec1ea    );    box-shadow: 0 0 5px rgb(66, 68, 68);    position: relative;    background-size: 400% 400%;    -webkit-animation: Gradient 10s ease infinite;    -moz-animation: Gradient 10s ease infinite;    animation: Gradient 10s ease infinite !important;}@-webkit-keyframes Gradient {    0% {        background-position: 0% 50%;    }    50% {        background-position: 100% 50%;    }    100% {        background-position: 0% 50%;    }}@-moz-keyframes Gradient {    0% {        background-position: 0% 50%;    }    50% {        background-position: 100% 50%;    }    100% {        background-position: 0% 50%;    }}@keyframes Gradient {    0% {        background-position: 0% 50%;    }    50% {        background-position: 100% 50%;    }    100% {        background-position: 0% 50%;    }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {    background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {    background-color: #3eb8be;    border-radius: 8px;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -213,17 +256,6 @@
       <url>/js/runtime.js</url>
       
         <content type="html"><![CDATA[var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);    var e=new Date("08/01/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),o=new Date("03/03/2023 00:00:00"),n=(now-o)/1e3/60/60/24,r=Math.floor(n),i=(now-o)/1e3/60/60-24*r,s=Math.floor(i);1==String(s).length&&(s="0"+s);var d=(now-o)/1e3/60-1440*r-60*s,l=Math.floor(d);1==String(l).length&&(l="0"+l);    var g=(now-o)/1e3-86400*r-3600*s-60*l,b=Math.round(g);1==String(b).length&&(b="0"+b);    let c="";c=s<18&&s>=9?`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`:`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=c)}setInterval((()=>{createtime()}),1e3);]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>轻音，武道馆</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -252,9 +284,9 @@
     
     
     <entry>
-      <title>轻音</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -263,9 +295,9 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>轻音</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
