@@ -137,25 +137,6 @@
     
     
     <entry>
-      <title>图片名字</title>
-      <link href="/article/19761.html"/>
-      <url>/article/19761.html</url>
-      
-        <content type="html"><![CDATA[<p><img src="/img/%E8%83%A1%E6%A1%83/%E8%83%A1%E6%A1%8301.jpg" alt="图片名称八个字"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Gallery </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>LeetCode01</title>
       <link href="/article/43175.html"/>
       <url>/article/43175.html</url>
@@ -166,6 +147,25 @@
       <categories>
           
           <category> LeetCode </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图片名字</title>
+      <link href="/article/19761.html"/>
+      <url>/article/19761.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="/img/%E8%83%A1%E6%A1%83/%E8%83%A1%E6%A1%8301.jpg" alt="图片名称八个字"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Gallery </category>
           
       </categories>
       
@@ -208,17 +208,6 @@
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -242,17 +231,6 @@
     
     <entry>
       <title></title>
-      <link href="/css/kslink.css"/>
-      <url>/css/kslink.css</url>
-      
-        <content type="html"><![CDATA[/* 添加友链按钮 *//* 快速填写格式 */.addBtn {    display: flex;    justify-content: center;    flex-wrap: wrap;}.addBtn button {    transition: .2s;    display: flex;    margin: 5px auto;    color: var(--global-bg);    padding: 15px;    border-radius: 40px;    background: var(--search-result-title);    align-items: center;}button {    padding: 0;    outline: 0;    border: none;    background: 0 0;    cursor: pointer;    touch-action: manipulation;}.fa-solid, .fas {    font-family: "Font Awesome 6 Free";    font-weight: 900;}.addBtn i {    font-size: 1.3rem;    margin-right: 10px;}.addBtn button:hover {    background: var(--theme-color);    color: #fff;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
       
@@ -263,11 +241,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -279,28 +257,6 @@
       <url>/css/readPercent.css</url>
       
         <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>轻音，武道馆</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div><link rel="stylesheet" href="/css/kslink.css"><script src="/js/kslink.js"></script>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/cat.js"/>
-      <url>/js/cat.js</url>
-      
-        <content type="html"><![CDATA[if (document.body.clientWidth > 992) {    function getBasicInfo() {        /* 窗口高度 */        var ViewH = $(window).height();        /* document高度 */        var DocH = $("body")[0].scrollHeight;        /* 滚动的高度 */        var ScrollTop = $(window).scrollTop();        /* 可滚动的高度 */        var S_V = DocH - ViewH;        var Band_H = ScrollTop / (DocH - ViewH) * 100;        return {            ViewH: ViewH,            DocH: DocH,            ScrollTop: ScrollTop,            Band_H: Band_H,            S_V: S_V        }    };    function show(basicInfo) {        if (basicInfo.ScrollTop > 0.001) {            $(".neko").css('display', 'block');        } else {            $(".neko").css('display', 'none');        }    }    (function ($) {        $.fn.nekoScroll = function (option) {            var defaultSetting = {                top: '0',                scroWidth: 6 + 'px',                z_index: 9999,                zoom: 0.9,                borderRadius: 5 + 'px',                right: 60 + 'px',                // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图                nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",                hoverMsg: "喵喵喵~",                color: "#6f42c1",                during: 500,                blog_body: "body",            };            var setting = $.extend(defaultSetting, option);            var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +                this.prop("id") : this.prop("nodeName");            if ($(".neko").length == 0) {                this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");            }            let basicInfo = getBasicInfo();            $(getThis)                .css({                    'position': 'fixed',                    'width': setting.scroWidth,                    'top': setting.top,                    'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                    'z-index': setting.z_index,                    'background-color': setting.bgcolor,                    "border-radius": setting.borderRadius,                    'right': setting.right,                    'background-image': 'url(' + setting.scImg + ')',                    'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                    'background-size': 'contain'                });            $("#" + setting.nekoname)                .css({                    'position': 'fixed',                    'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                    'z-index': setting.z_index * 10,                    'right': setting.right,                    'background-image': 'url(' + setting.nekoImg + ')',                });            show(getBasicInfo());            $(window)                .scroll(function () {                    let basicInfo = getBasicInfo();                    show(basicInfo);                    $(getThis)                        .css({                            'position': 'fixed',                            'width': setting.scroWidth,                            'top': setting.top,                            'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                            'z-index': setting.z_index,                            'background-color': setting.bgcolor,                            "border-radius": setting.borderRadius,                            'right': setting.right,                            'background-image': 'url(' + setting.scImg + ')',                            'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                            'background-size': 'contain'                        });                    $("#" + setting.nekoname)                        .css({                            'position': 'fixed',                            'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                            'z-index': setting.z_index * 10,                            'right': setting.right,                            'background-image': 'url(' + setting.nekoImg + ')',                        });                    if (basicInfo.ScrollTop == basicInfo.S_V) {                        $("#" + setting.nekoname)                            .addClass("showMsg")                    } else {                        $("#" + setting.nekoname)                            .removeClass("showMsg");                        $("#" + setting.nekoname)                            .attr("data-msg", setting.hoverMsg);                    }                });            this.click(function (e) {                btf.scrollToDest(0, 500)            });            $("#" + setting.nekoname)                .click(function () {                    btf.scrollToDest(0, 500)                });            return this;        }    })(jQuery);    $(document).ready(function () {        //部分自定义        $("#myscoll").nekoScroll({                bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效                borderRadius: '2em',                zoom: 0.9            }        );        //自定义（去掉以下注释，并注释掉其他的查看效果）        /*        $("#myscoll").nekoScroll({            nekoname:'neko1', //nekoname，相当于id            nekoImg:'img/猫咪.png', //neko的背景图片            scImg:"img/绳1.png", //绳子的背景图片            bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效            zoom:0.9, //绳子长度的缩放值            hoverMsg:'你好~喵', //鼠标浮动到neko上方的对话框信息            right:'100px', //距离页面右边的距离            fontFamily:'楷体', //对话框字体            fontSize:'14px', //对话框字体的大小            color:'#1e90ff', //对话框字体颜色            scroWidth:'8px', //绳子的宽度            z_index:100, //不用解释了吧            during:1200, //从顶部到底部滑动的时长        });        */    })}]]></content>
       
     </entry>
     
@@ -319,10 +275,21 @@
     
     <entry>
       <title></title>
-      <link href="/js/day.js"/>
-      <url>/js/day.js</url>
+      <link href="/css/kslink.css"/>
+      <url>/css/kslink.css</url>
       
-        <content type="html"><![CDATA[var d = new Date();m = d.getMonth() + 1;dd = d.getDate();y = d.getFullYear();// 公祭日if (m == 9 && dd == 18) {    document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今天是九一八事变" + (y - 1931).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 7 && dd == 7) {    document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今天是卢沟桥事变" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 12 && dd == 13) {    document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今天是南京大屠杀" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 8 && dd == 14) {    document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今天是世界慰安妇纪念日\n🪔勿忘国耻，振兴中华🪔");        sessionStorage.setItem("isPopupWindow", "1");    }}// 节假日if (m == 10 && dd <= 3) {//国庆节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("祝祖国" + (y - 1949).toString() + "岁生日快乐！");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 8 && dd == 15) {//搞来玩的，小日子投降    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("小日子已经投降" + (y - 1945).toString() + "年了😃");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 1 && dd == 1) {//元旦节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire(y.toString() + "年元旦快乐！🎉");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 3 && dd == 8) {//妇女节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("各位女神们，妇女节快乐！👩");        sessionStorage.setItem("isPopupWindow", "1");    }}l = ["非常抱歉，因为不可控原因，博客将于明天停止运营！", "好消息，日本没了！", "美国垮了，原因竟然是川普！", "微软垮了！", "你的电脑已经过载，建议立即关机！", "你知道吗？站长很喜欢你哦！", "一分钟有61秒哦", "你喜欢的人跟别人跑了！"]if (m == 4 && dd == 1) {//愚人节，随机谎话    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire(l[Math.floor(Math.random() * l.length)]);        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 5 && dd == 1) {//劳动节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("劳动节快乐\n为各行各业辛勤工作的人们致敬！");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 5 && dd == 4) {//青年节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("青年节快乐\n青春不是回忆逝去,而是把握现在！");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 5 && dd == 20) {//520    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧！💑");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 7 && dd == 1) {//建党节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("祝中国共产党" + (y - 1921).toString() + "岁生日快乐！");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 9 && dd == 10) {//教师节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("各位老师们教师节快乐！👩‍🏫");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 12 && dd == 25) {//圣诞节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("圣诞节快乐！🎄");        sessionStorage.setItem("isPopupWindow", "1");    }}//传统节日部分if ((y == 2023 && m == 4 && dd == 5) || (y == 2024 && m == 4 && dd == 4) || (y == 2025 && m == 4 && dd == 4)) {//清明节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("清明时节雨纷纷,一束鲜花祭故人💐");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((y == 2023 && m == 12 && dd == 22) || (y == 2024 && m == 12 && dd == 21) || (y == 2025 && m == 12 && dd == 21)) {//冬至    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("冬至快乐\n快吃上一碗热热的汤圆和饺子吧🧆");        sessionStorage.setItem("isPopupWindow", "1");    }}var lunar = calendarFormatter.solar2lunar();//农历采用汉字计算，防止出现闰月导致问题if ((lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初六") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初五") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初四") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初三") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初二") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初一") || (lunar["IMonthCn"] == "腊月" && lunar["IDayCn"] == "三十") || (lunar["IMonthCn"] == "腊月" && lunar["IDayCn"] == "廿九")) {    //春节，本来只有大年三十到初六，但是有时候除夕是大年二十九，所以也加上了    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire(y.toString() + "年新年快乐\n🎊祝你心想事成，诸事顺利🎊");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "十五")) {    //元宵节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("元宵节快乐\n送你一个大大的灯笼🧅");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "五月" && lunar["IDayCn"] == "初五")) {    //端午节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("端午节快乐\n请你吃一条粽子🍙");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "七月" && lunar["IDayCn"] == "初七")) {    //七夕节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("七夕节快乐\n黄昏后,柳梢头,牛郎织女来碰头");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "八月" && lunar["IDayCn"] == "十五")) {    //中秋节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("中秋节快乐\n请你吃一块月饼🍪");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九")) {    //重阳节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("重阳节快乐\n独在异乡为异客，每逢佳节倍思亲");        sessionStorage.setItem("isPopupWindow", "1");    }}// 切换主题提醒// if (y == 2022 && m == 12 && (dd >= 18 && dd <= 20)) {//     if (sessionStorage.getItem("isPopupWindow") != "1") {//         Swal.fire("网站换成冬日限定主题啦⛄");//         sessionStorage.setItem("isPopupWindow", "1");//     }// }]]></content>
+        <content type="html"><![CDATA[/* 添加友链按钮 *//* 快速填写格式 */.addBtn {    display: flex;    justify-content: center;    flex-wrap: wrap;}.addBtn button {    transition: .2s;    display: flex;    margin: 5px auto;    color: var(--global-bg);    padding: 15px;    border-radius: 40px;    background: var(--search-result-title);    align-items: center;}button {    padding: 0;    outline: 0;    border: none;    background: 0 0;    cursor: pointer;    touch-action: manipulation;}.fa-solid, .fas {    font-family: "Font Awesome 6 Free";    font-weight: 900;}.addBtn i {    font-size: 1.3rem;    margin-right: 10px;}.addBtn button:hover {    background: var(--theme-color);    color: #fff;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/cat.js"/>
+      <url>/js/cat.js</url>
+      
+        <content type="html"><![CDATA[if (document.body.clientWidth > 992) {    function getBasicInfo() {        /* 窗口高度 */        var ViewH = $(window).height();        /* document高度 */        var DocH = $("body")[0].scrollHeight;        /* 滚动的高度 */        var ScrollTop = $(window).scrollTop();        /* 可滚动的高度 */        var S_V = DocH - ViewH;        var Band_H = ScrollTop / (DocH - ViewH) * 100;        return {            ViewH: ViewH,            DocH: DocH,            ScrollTop: ScrollTop,            Band_H: Band_H,            S_V: S_V        }    };    function show(basicInfo) {        if (basicInfo.ScrollTop > 0.001) {            $(".neko").css('display', 'block');        } else {            $(".neko").css('display', 'none');        }    }    (function ($) {        $.fn.nekoScroll = function (option) {            var defaultSetting = {                top: '0',                scroWidth: 6 + 'px',                z_index: 9999,                zoom: 0.9,                borderRadius: 5 + 'px',                right: 60 + 'px',                // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图                nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",                hoverMsg: "喵喵喵~",                color: "#6f42c1",                during: 500,                blog_body: "body",            };            var setting = $.extend(defaultSetting, option);            var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +                this.prop("id") : this.prop("nodeName");            if ($(".neko").length == 0) {                this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");            }            let basicInfo = getBasicInfo();            $(getThis)                .css({                    'position': 'fixed',                    'width': setting.scroWidth,                    'top': setting.top,                    'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                    'z-index': setting.z_index,                    'background-color': setting.bgcolor,                    "border-radius": setting.borderRadius,                    'right': setting.right,                    'background-image': 'url(' + setting.scImg + ')',                    'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                    'background-size': 'contain'                });            $("#" + setting.nekoname)                .css({                    'position': 'fixed',                    'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                    'z-index': setting.z_index * 10,                    'right': setting.right,                    'background-image': 'url(' + setting.nekoImg + ')',                });            show(getBasicInfo());            $(window)                .scroll(function () {                    let basicInfo = getBasicInfo();                    show(basicInfo);                    $(getThis)                        .css({                            'position': 'fixed',                            'width': setting.scroWidth,                            'top': setting.top,                            'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                            'z-index': setting.z_index,                            'background-color': setting.bgcolor,                            "border-radius": setting.borderRadius,                            'right': setting.right,                            'background-image': 'url(' + setting.scImg + ')',                            'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                            'background-size': 'contain'                        });                    $("#" + setting.nekoname)                        .css({                            'position': 'fixed',                            'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                            'z-index': setting.z_index * 10,                            'right': setting.right,                            'background-image': 'url(' + setting.nekoImg + ')',                        });                    if (basicInfo.ScrollTop == basicInfo.S_V) {                        $("#" + setting.nekoname)                            .addClass("showMsg")                    } else {                        $("#" + setting.nekoname)                            .removeClass("showMsg");                        $("#" + setting.nekoname)                            .attr("data-msg", setting.hoverMsg);                    }                });            this.click(function (e) {                btf.scrollToDest(0, 500)            });            $("#" + setting.nekoname)                .click(function () {                    btf.scrollToDest(0, 500)                });            return this;        }    })(jQuery);    $(document).ready(function () {        //部分自定义        $("#myscoll").nekoScroll({                bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效                borderRadius: '2em',                zoom: 0.9            }        );        //自定义（去掉以下注释，并注释掉其他的查看效果）        /*        $("#myscoll").nekoScroll({            nekoname:'neko1', //nekoname，相当于id            nekoImg:'img/猫咪.png', //neko的背景图片            scImg:"img/绳1.png", //绳子的背景图片            bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效            zoom:0.9, //绳子长度的缩放值            hoverMsg:'你好~喵', //鼠标浮动到neko上方的对话框信息            right:'100px', //距离页面右边的距离            fontFamily:'楷体', //对话框字体            fontSize:'14px', //对话框字体的大小            color:'#1e90ff', //对话框字体颜色            scroWidth:'8px', //绳子的宽度            z_index:100, //不用解释了吧            during:1200, //从顶部到底部滑动的时长        });        */    })}]]></content>
       
     </entry>
     
@@ -334,6 +301,28 @@
       <url>/js/fps.js</url>
       
         <content type="html"><![CDATA[if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {    var rAF = function () {        return (            window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            function (callback) {                window.setTimeout(callback, 1000 / 60);            }        );    }();    var frame = 0;    var allFrameCount = 0;    var lastTime = Date.now();    var lastFameTime = Date.now();    var loop = function () {        var now = Date.now();        var fs = (now - lastFameTime);        var fps = Math.round(1000 / fs);        lastFameTime = now;        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS        allFrameCount++;        frame++;        if (now > 1000 + lastTime) {            var fps = Math.round((frame * 1000) / (now - lastTime));            if (fps <= 5) {                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`            } else if (fps <= 15) {                var kd = `<span style="color:red">电竞级帧率😖</span>`            } else if (fps <= 25) {                var kd = `<span style="color:orange">有点难受😨</span>`            } else if (fps < 35) {                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`            } else if (fps <= 45) {                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`            } else {                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`            }            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;            frame = 0;            lastTime = now;        };        rAF(loop);    }    loop();} else {    document.getElementById("fps").style = "display:none!important"}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
+      
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/day.js"/>
+      <url>/js/day.js</url>
+      
+        <content type="html"><![CDATA[var d = new Date();m = d.getMonth() + 1;dd = d.getDate();y = d.getFullYear();// 公祭日if (m == 9 && dd == 18) {    document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今天是九一八事变" + (y - 1931).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 7 && dd == 7) {    document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今天是卢沟桥事变" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 12 && dd == 13) {    document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今天是南京大屠杀" + (y - 1937).toString() + "周年纪念日\n🪔勿忘国耻，振兴中华🪔");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 8 && dd == 14) {    document.getElementsByTagName("html")[0].setAttribute("style", "filter: grayscale(60%);");    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今天是世界慰安妇纪念日\n🪔勿忘国耻，振兴中华🪔");        sessionStorage.setItem("isPopupWindow", "1");    }}// 节假日if (m == 10 && dd <= 3) {//国庆节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("祝祖国" + (y - 1949).toString() + "岁生日快乐！");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 8 && dd == 15) {//搞来玩的，小日子投降    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("小日子已经投降" + (y - 1945).toString() + "年了😃");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 1 && dd == 1) {//元旦节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire(y.toString() + "年元旦快乐！🎉");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 3 && dd == 8) {//妇女节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("各位女神们，妇女节快乐！👩");        sessionStorage.setItem("isPopupWindow", "1");    }}l = ["非常抱歉，因为不可控原因，博客将于明天停止运营！", "好消息，日本没了！", "美国垮了，原因竟然是川普！", "微软垮了！", "你的电脑已经过载，建议立即关机！", "你知道吗？站长很喜欢你哦！", "一分钟有61秒哦", "你喜欢的人跟别人跑了！"]if (m == 4 && dd == 1) {//愚人节，随机谎话    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire(l[Math.floor(Math.random() * l.length)]);        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 5 && dd == 1) {//劳动节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("劳动节快乐\n为各行各业辛勤工作的人们致敬！");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 5 && dd == 4) {//青年节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("青年节快乐\n青春不是回忆逝去,而是把握现在！");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 5 && dd == 20) {//520    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧！💑");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 7 && dd == 1) {//建党节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("祝中国共产党" + (y - 1921).toString() + "岁生日快乐！");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 9 && dd == 10) {//教师节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("各位老师们教师节快乐！👩‍🏫");        sessionStorage.setItem("isPopupWindow", "1");    }}if (m == 12 && dd == 25) {//圣诞节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("圣诞节快乐！🎄");        sessionStorage.setItem("isPopupWindow", "1");    }}//传统节日部分if ((y == 2023 && m == 4 && dd == 5) || (y == 2024 && m == 4 && dd == 4) || (y == 2025 && m == 4 && dd == 4)) {//清明节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("清明时节雨纷纷,一束鲜花祭故人💐");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((y == 2023 && m == 12 && dd == 22) || (y == 2024 && m == 12 && dd == 21) || (y == 2025 && m == 12 && dd == 21)) {//冬至    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("冬至快乐\n快吃上一碗热热的汤圆和饺子吧🧆");        sessionStorage.setItem("isPopupWindow", "1");    }}var lunar = calendarFormatter.solar2lunar();//农历采用汉字计算，防止出现闰月导致问题if ((lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初六") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初五") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初四") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初三") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初二") || (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初一") || (lunar["IMonthCn"] == "腊月" && lunar["IDayCn"] == "三十") || (lunar["IMonthCn"] == "腊月" && lunar["IDayCn"] == "廿九")) {    //春节，本来只有大年三十到初六，但是有时候除夕是大年二十九，所以也加上了    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire(y.toString() + "年新年快乐\n🎊祝你心想事成，诸事顺利🎊");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "十五")) {    //元宵节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("元宵节快乐\n送你一个大大的灯笼🧅");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "五月" && lunar["IDayCn"] == "初五")) {    //端午节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("端午节快乐\n请你吃一条粽子🍙");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "七月" && lunar["IDayCn"] == "初七")) {    //七夕节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("七夕节快乐\n黄昏后,柳梢头,牛郎织女来碰头");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "八月" && lunar["IDayCn"] == "十五")) {    //中秋节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("中秋节快乐\n请你吃一块月饼🍪");        sessionStorage.setItem("isPopupWindow", "1");    }}if ((lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九")) {    //重阳节    if (sessionStorage.getItem("isPopupWindow") != "1") {        Swal.fire("重阳节快乐\n独在异乡为异客，每逢佳节倍思亲");        sessionStorage.setItem("isPopupWindow", "1");    }}// 切换主题提醒// if (y == 2022 && m == 12 && (dd >= 18 && dd <= 20)) {//     if (sessionStorage.getItem("isPopupWindow") != "1") {//         Swal.fire("网站换成冬日限定主题啦⛄");//         sessionStorage.setItem("isPopupWindow", "1");//     }// }]]></content>
       
     </entry>
     
@@ -363,10 +352,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/readPercent.js"/>
-      <url>/js/readPercent.js</url>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
       
-        <content type="html"><![CDATA[window.onscroll = percent;// 执行函数// 页面百分比function percent() {    let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度        b = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight) - document.documentElement.clientHeight, // 整个网页高度        result = Math.round(a / b * 100), // 计算百分比        up = document.querySelector("#go-up") // 获取按钮    if (result <= 95) {        up.childNodes[0].style.display = 'none'        up.childNodes[1].style.display = 'block'        up.childNodes[1].innerHTML = result;    } else {        up.childNodes[1].style.display = 'none'        up.childNodes[0].style.display = 'block'    }}]]></content>
+        <content type="html"><![CDATA[// 防抖全局计时器let TT = null;    //time用来控制事件的触发// 防抖函数:fn->逻辑 time->防抖时间function debounce(fn, time) {    if (TT !== null) clearTimeout(TT);    TT = setTimeout(fn, time);}// 复制提醒// document.addEventListener("copy", function () {//     debounce(function () {//         new Vue({//             data: function () {//                 this.$notify({//                     title: "哎嘿！复制成功🍬",//                     message: "若要转载最好保留原文链接哦，给你一个大大的赞！",//                     position: 'top-left',//                     offset: 50,//                     showClose: true,//                     type: "success",//                     duration: 5000//                 });//             }//         })//     }, 300);// })var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);    var e=new Date("08/01/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),o=new Date("03/03/2023 00:00:00"),n=(now-o)/1e3/60/60/24,r=Math.floor(n),i=(now-o)/1e3/60/60-24*r,s=Math.floor(i);1==String(s).length&&(s="0"+s);var d=(now-o)/1e3/60-1440*r-60*s,l=Math.floor(d);1==String(l).length&&(l="0"+l);    var g=(now-o)/1e3-86400*r-3600*s-60*l,b=Math.round(g);1==String(b).length&&(b="0"+b);    let c="";c=s<18&&s>=9?`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`:`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=c)}setInterval((()=>{createtime()}),1e3);]]></content>
       
     </entry>
     
@@ -374,10 +363,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
+      <link href="/js/readPercent.js"/>
+      <url>/js/readPercent.js</url>
       
-        <content type="html"><![CDATA[// 防抖全局计时器let TT = null;    //time用来控制事件的触发// 防抖函数:fn->逻辑 time->防抖时间function debounce(fn, time) {    if (TT !== null) clearTimeout(TT);    TT = setTimeout(fn, time);}// 复制提醒// document.addEventListener("copy", function () {//     debounce(function () {//         new Vue({//             data: function () {//                 this.$notify({//                     title: "哎嘿！复制成功🍬",//                     message: "若要转载最好保留原文链接哦，给你一个大大的赞！",//                     position: 'top-left',//                     offset: 50,//                     showClose: true,//                     type: "success",//                     duration: 5000//                 });//             }//         })//     }, 300);// })var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);    var e=new Date("08/01/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),o=new Date("03/03/2023 00:00:00"),n=(now-o)/1e3/60/60/24,r=Math.floor(n),i=(now-o)/1e3/60/60-24*r,s=Math.floor(i);1==String(s).length&&(s="0"+s);var d=(now-o)/1e3/60-1440*r-60*s,l=Math.floor(d);1==String(l).length&&(l="0"+l);    var g=(now-o)/1e3-86400*r-3600*s-60*l,b=Math.round(g);1==String(b).length&&(b="0"+b);    let c="";c=s<18&&s>=9?`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`:`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=c)}setInterval((()=>{createtime()}),1e3);]]></content>
+        <content type="html"><![CDATA[window.onscroll = percent;// 执行函数// 页面百分比function percent() {    let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度        b = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight) - document.documentElement.clientHeight, // 整个网页高度        result = Math.round(a / b * 100), // 计算百分比        up = document.querySelector("#go-up") // 获取按钮    if (result <= 95) {        up.childNodes[0].style.display = 'none'        up.childNodes[1].style.display = 'block'        up.childNodes[1].innerHTML = result;    } else {        up.childNodes[1].style.display = 'none'        up.childNodes[0].style.display = 'block'    }}]]></content>
       
     </entry>
     
@@ -406,28 +395,6 @@
     
     
     <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/js/universe.js"/>
       <url>/js/universe.js</url>
@@ -439,9 +406,42 @@
     
     
     <entry>
+      <title>轻音，武道馆</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div><link rel="stylesheet" href="/css/kslink.css"><script src="/js/kslink.js"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>轻音</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
