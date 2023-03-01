@@ -1,3 +1,30 @@
+// 防抖全局计时器
+let TT = null;    //time用来控制事件的触发
+// 防抖函数:fn->逻辑 time->防抖时间
+function debounce(fn, time) {
+    if (TT !== null) clearTimeout(TT);
+    TT = setTimeout(fn, time);
+}
+
+// 复制提醒
+// document.addEventListener("copy", function () {
+//     debounce(function () {
+//         new Vue({
+//             data: function () {
+//                 this.$notify({
+//                     title: "哎嘿！复制成功🍬",
+//                     message: "若要转载最好保留原文链接哦，给你一个大大的赞！",
+//                     position: 'top-left',
+//                     offset: 50,
+//                     showClose: true,
+//                     type: "success",
+//                     duration: 5000
+//                 });
+//             }
+//         })
+//     }, 300);
+// })
+
 var now=new Date;
 function createtime(){now.setTime(now.getTime()+1e3);
     var e=new Date("08/01/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),o=new Date("03/03/2023 00:00:00"),n=(now-o)/1e3/60/60/24,r=Math.floor(n),i=(now-o)/1e3/60/60-24*r,s=Math.floor(i);1==String(s).length&&(s="0"+s);var d=(now-o)/1e3/60-1440*r-60*s,l=Math.floor(d);1==String(l).length&&(l="0"+l);
