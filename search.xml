@@ -27,8 +27,14 @@
       <link href="/article/1.html"/>
       <url>/article/1.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="任务清单"><a href="#任务清单" class="headerlink" title="任务清单"></a>任务清单</h1><h2 id="零售门店管理："><a href="#零售门店管理：" class="headerlink" title="零售门店管理："></a>零售门店管理：</h2><p>门店信息包括：名称、地址、工作场所面积（单位：平方米）</p><h2 id="员工管理："><a href="#员工管理：" class="headerlink" title="员工管理："></a>员工管理：</h2><ol><li><p>员工信息包括：姓名、职位、电话、电邮、工作门店、偏好</p></li><li><p>职位可选值：门店经理，副经理，小组长，店员（收银，导购，库房）</p></li><li><p>偏好规则：</p><ol><li>工作日偏好：周几到周几工作。如：周３到周６.缺省为全部。</li><li>工作时间偏好：工作时间范围，如：上午８点到下午６点。缺省为全部。</li><li>班次时长偏好，每天时长不超过多久。如：４小时。缺省为不限制；每周最多工作多久等。如：２０小时。缺省为不限制。</li></ol></li></ol><h2 id="排班规则维护"><a href="#排班规则维护" class="headerlink" title="排班规则维护"></a>排班规则维护</h2><h3 id="固定规则"><a href="#固定规则" class="headerlink" title="固定规则"></a>固定规则</h3><ol><li><p>门店营业时间规则</p><ol><li>周一<del>周五：早9点</del>晚9点</li><li>周末：早10点~晚10点</li></ol></li><li><p>工作时长规则</p><ol><li>员工每周最多工作40小时</li><li>员工每天最多工作８小时</li><li>单个班次最少2小时，最多4小时。员工可以连续排多个班次</li><li>员工最长连续工作时长：4小时。达到连续工作时长，必须安排休息时间</li><li>必须给工作时间完全覆盖午餐、晚餐时间的员工，安排午餐或晚餐时间</li></ol></li><li><p>休息时间段:</p><ol><li>午餐时间：时间范围（如11点到14点，半小时）</li><li>晚餐时间：时间范围（如17点到20点，半小时）</li><li>休息时间：时间范围（不限。半小时）</li></ol></li></ol><h3 id="用户自定义规则"><a href="#用户自定义规则" class="headerlink" title="用户自定义规则"></a>用户自定义规则</h3><h4 id="排班规则"><a href="#排班规则" class="headerlink" title="排班规则"></a>排班规则</h4><ol><li><p>每天开店之前需要1小时做准备工作（如做清洁）。1为缺省值，可调整</p><ol><li><p>公式：门店面积&#x2F;100 &#x3D; 人数。100为缺省值，可调整</p></li><li><p>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（比如导购人员、收银，店经理等）</p></li></ol></li><li><p>每天至少安排三个不超过4小时的班次</p><ol><li>公式：预测客流&#x2F;3.8 &#x3D; 店员需求数。3.8为缺省值，可调整</li><li>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（比如导购人员、收银，店经理等）</li></ol></li><li><p>如果没有客流量的时候，至少需要1个店员值班.1为缺省值，可调整</p></li><li><p>每天关店之后需要2小时做收尾工作（如盘点、清算、清洁）。2为缺省值。可调整</p></li><li><p>公式：门店面积&#x2F;80 + 1 &#x3D; 人数。80和1为缺省值。可调整</p></li><li><p>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（ 比如导购人员、收银，店经理等）</p></li></ol><h2 id="业务预测数据"><a href="#业务预测数据" class="headerlink" title="业务预测数据"></a>业务预测数据</h2><p>本赛题主要从客流量做业务预测，下方为每天各时间段的示例数据，参赛团队可以按示例数据生成各个门店一段时间的详细预测数据。<br><img alt="预测数据" src="/img/智能排班/表格01.png"/></p><h1 id="任务说明"><a href="#任务说明" class="headerlink" title="任务说明"></a>任务说明</h1><h2 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h2><ul><li><p>某公司在某区域有 <strong>3 家销售门店</strong>，</p></li><li><p>公司目前有业务预测系统可以对各家门店销售情况进行预测，</p></li><li><p>需要基于预测数据以及业务波动，细化每天不同时间段不同技能的门店劳动力需求量，</p></li><li><p>保证业务高峰时人员充足，同时避免业务低谷时的人力浪费。</p></li></ul><h2 id="用户期望"><a href="#用户期望" class="headerlink" title="用户期望"></a>用户期望</h2><ul><li><p>门店管理者可以基于智能排班系统按周一键生成排班表，</p></li><li><p>同时根据时间、职位匹配度，自动把班次分配给适合的员工。</p></li><li><p>对于没有匹配员工的班次，按开放班次处理。 </p></li><li><p>排班表需要支持按日、按周查看，日视图和周视图里可以按技能，岗位和员工分组查看，</p></li><li><p>门店管理者可以编辑排班表，支持手动的班次指派，</p></li><li><p>可以把已经指派的班次重新分配给别的员工或者把未指派的开放班次分配给可用的员工。</p></li></ul><h1 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h1><h2 id="门店管理"><a href="#门店管理" class="headerlink" title="门店管理"></a>门店管理</h2><h3 id="思路一"><a href="#思路一" class="headerlink" title="思路一"></a>思路一</h3><ol><li>设置一个管理员（admin），可以增删改查各个门店，拥有所有权限</li><li>每个门店可登录系统后，增删改查本门店员工，和修改个人信息<ol><li>门店账号每个门店只有一个，一般由门店管理者（门店经理）掌控</li></ol></li></ol><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ol><li>开发简单</li><li>适合小型门店</li></ol><h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><ol><li>管理效率低，管理职责由一人承担</li><li>不适合大型门店</li></ol><h3 id="思路二"><a href="#思路二" class="headerlink" title="思路二"></a>思路二</h3><ol><li>设置一个管理员（admin），拥有所有权限</li><li>根据不同职位赋给员工相应权限<ol><li>比如说，一个门店经理，拥有本门店所有权限</li><li>门店副经理，只能crud除经理外员工信息，不能修改门店基本信息</li><li>小组长，可以crud本小组成员</li></ol></li></ol><h4 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h4><ol><li>管理效率高，分工明确</li><li>适合大型门店</li></ol><h4 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h4><ol><li>开发难度高（需要前端开发人员根据用户职位展示不同的页面）</li></ol><h2 id="员工管理"><a href="#员工管理" class="headerlink" title="员工管理"></a>员工管理</h2><h3 id="主要职务"><a href="#主要职务" class="headerlink" title="主要职务"></a>主要职务</h3><ol><li>门店经理</li><li>门店副经理</li><li>小组组长</li><li>店员（收银，导购，库房）</li></ol><h3 id="实现思路-1"><a href="#实现思路-1" class="headerlink" title="实现思路"></a>实现思路</h3><ol><li><p>不同职务的人员拥有不同权限</p></li><li><p>每个员工都具备一个账号（使用邮箱登录），登录后可修改本人信息</p></li></ol><h2 id="业务数据预测"><a href="#业务数据预测" class="headerlink" title="业务数据预测"></a>业务数据预测</h2><p><img src="/img/%E6%99%BA%E8%83%BD%E6%8E%92%E7%8F%AD/%E8%A1%A8%E6%A0%BC01.png" alt="表格01"></p><h2 id="排班"><a href="#排班" class="headerlink" title="排班"></a>排班</h2><h3 id="排班规则管理"><a href="#排班规则管理" class="headerlink" title="排班规则管理"></a>排班规则管理</h3><ol><li>只有管理员（门店经理）可以设置和修改规则</li></ol><h3 id="具体排班"><a href="#具体排班" class="headerlink" title="具体排班"></a>具体排班</h3><ol><li>根据不同排班规则采取合适的算法，形成排班表，支持多种查看方式</li><li>管理者可直接手动更改排班表<ol><li>第一次生成的排班表为算法生成，此为默认排班表</li><li>管理者可点击重置按钮，恢复默认排班表</li><li>只有管理员才可生成排班表并发布（只能发布一张），供员工查看</li><li>员工只能查看管理员发布的唯一排班表</li></ol></li></ol>]]></content>
       
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
       
       
     </entry>
@@ -197,28 +203,6 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[<!-- GitCalendar容器 --><div id="gitZone"></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/cat.css"/>
-      <url>/css/cat.css</url>
-      
-        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #6f42c1;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>照片</title>
       <link href="/Gallery/index.html"/>
       <url>/Gallery/index.html</url>
@@ -242,10 +226,32 @@
     
     <entry>
       <title></title>
-      <link href="/css/universe.css"/>
-      <url>/css/universe.css</url>
+      <link href="/css/cat.css"/>
+      <url>/css/cat.css</url>
       
-        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;}]]></content>
+        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #6f42c1;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[<!-- GitCalendar容器 --><div id="gitZone"></div>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/readPercent.css"/>
+      <url>/css/readPercent.css</url>
+      
+        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
       
     </entry>
     
@@ -264,10 +270,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/readPercent.css"/>
-      <url>/css/readPercent.css</url>
+      <link href="/css/universe.css"/>
+      <url>/css/universe.css</url>
       
-        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
+        <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;}]]></content>
       
     </entry>
     
@@ -308,17 +314,6 @@
     
     <entry>
       <title></title>
-      <link href="/js/kslink.js"/>
-      <url>/js/kslink.js</url>
-      
-        <content type="html"><![CDATA[var leonus = {    linkCom: e => {        var t = document.querySelector(".el-textarea__inner");        "bf" == e ? (t.value = "```yml\n", t.value += "- name: \n  link: \n  avatar: \n  descr: \n  siteshot: ", t.value += "\n```", t.setSelectionRange(15, 15)) : (t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\n站点截图：", t.setSelectionRange(5, 5)), t.focus()    },    owoBig: () => {        if (!document.getElementById("post-comment") || document.body.clientWidth < 768) return;        let e = 1,            t = "",            o = document.createElement("div"),            n = document.querySelector("body");        o.id = "owo-big", n.appendChild(o), new MutationObserver((l => {            for (let a = 0; a < l.length; a++) {                let i = l[a].addedNodes,                    s = "";                if (2 == i.length && "OwO-body" == i[1].className) s = i[1];                else {                    if (1 != i.length || "tk-comment" != i[0].className) continue;                    s = i[0]                }                s.onmouseover = l => {                    e && ("OwO-body" == s.className && "IMG" == l.target.tagName || "tk-owo-emotion" == l.target.className) && (e = 0, t = setTimeout((() => {                        let e = 3 * l.path[0].clientHeight,                            t = 3 * l.path[0].clientWidth,                            a = l.x - l.offsetX - (t - l.path[0].clientWidth) / 2,                            i = l.y - l.offsetY;                        a + t > n.clientWidth && (a -= a + t - n.clientWidth + 10), a < 0 && (a = 10), o.style.cssText = `display:flex; height:${e}px; width:${t}px; left:${a}px; top:${i}px;`, o.innerHTML = `<img src="${l.target.src}">`                    }), 300))                }, s.onmouseout = () => {                    o.style.display = "none", e = 1, clearTimeout(t)                }            }        })).observe(document.getElementById("post-comment"), {            subtree: !0,            childList: !0        })    },};]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/js/day.js"/>
       <url>/js/day.js</url>
       
@@ -334,6 +329,17 @@
       <url>/js/fps.js</url>
       
         <content type="html"><![CDATA[if (window.localStorage.getItem("fpson") == undefined || window.localStorage.getItem("fpson") == "1") {    var rAF = function () {        return (            window.requestAnimationFrame ||            window.webkitRequestAnimationFrame ||            function (callback) {                window.setTimeout(callback, 1000 / 60);            }        );    }();    var frame = 0;    var allFrameCount = 0;    var lastTime = Date.now();    var lastFameTime = Date.now();    var loop = function () {        var now = Date.now();        var fs = (now - lastFameTime);        var fps = Math.round(1000 / fs);        lastFameTime = now;        // 不置 0，在动画的开头及结尾记录此值的差值算出 FPS        allFrameCount++;        frame++;        if (now > 1000 + lastTime) {            var fps = Math.round((frame * 1000) / (now - lastTime));            if (fps <= 5) {                var kd = `<span style="color:#bd0000">卡成ppt🤢</span>`            } else if (fps <= 15) {                var kd = `<span style="color:red">电竞级帧率😖</span>`            } else if (fps <= 25) {                var kd = `<span style="color:orange">有点难受😨</span>`            } else if (fps < 35) {                var kd = `<span style="color:#9338e6">不太流畅🙄</span>`            } else if (fps <= 45) {                var kd = `<span style="color:#08b7e4">还不错哦😁</span>`            } else {                var kd = `<span style="color:#39c5bb">十分流畅🤣</span>`            }            document.getElementById("fps").innerHTML = `FPS:${fps} ${kd}`;            frame = 0;            lastTime = now;        };        rAF(loop);    }    loop();} else {    document.getElementById("fps").style = "display:none!important"}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/kslink.js"/>
+      <url>/js/kslink.js</url>
+      
+        <content type="html"><![CDATA[var leonus = {    linkCom: e => {        var t = document.querySelector(".el-textarea__inner");        "bf" == e ? (t.value = "```yml\n", t.value += "- name: \n  link: \n  avatar: \n  descr: \n  siteshot: ", t.value += "\n```", t.setSelectionRange(15, 15)) : (t.value = "站点名称：\n站点地址：\n头像链接：\n站点描述：\n站点截图：", t.setSelectionRange(5, 5)), t.focus()    },    owoBig: () => {        if (!document.getElementById("post-comment") || document.body.clientWidth < 768) return;        let e = 1,            t = "",            o = document.createElement("div"),            n = document.querySelector("body");        o.id = "owo-big", n.appendChild(o), new MutationObserver((l => {            for (let a = 0; a < l.length; a++) {                let i = l[a].addedNodes,                    s = "";                if (2 == i.length && "OwO-body" == i[1].className) s = i[1];                else {                    if (1 != i.length || "tk-comment" != i[0].className) continue;                    s = i[0]                }                s.onmouseover = l => {                    e && ("OwO-body" == s.className && "IMG" == l.target.tagName || "tk-owo-emotion" == l.target.className) && (e = 0, t = setTimeout((() => {                        let e = 3 * l.path[0].clientHeight,                            t = 3 * l.path[0].clientWidth,                            a = l.x - l.offsetX - (t - l.path[0].clientWidth) / 2,                            i = l.y - l.offsetY;                        a + t > n.clientWidth && (a -= a + t - n.clientWidth + 10), a < 0 && (a = 10), o.style.cssText = `display:flex; height:${e}px; width:${t}px; left:${a}px; top:${i}px;`, o.innerHTML = `<img src="${l.target.src}">`                    }), 300))                }, s.onmouseout = () => {                    o.style.display = "none", e = 1, clearTimeout(t)                }            }        })).observe(document.getElementById("post-comment"), {            subtree: !0,            childList: !0        })    },};]]></content>
       
     </entry>
     
@@ -374,10 +380,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
       
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {    if (document.hidden) {        //离开当前页面时标签显示内容        document.title = '👀跑哪里去了~';        clearTimeout(titleTime);    } else {        //返回当前页面时标签显示内容        document.title = '🐖抓到你啦～';        //两秒后变回正常标题        titleTime = setTimeout(function () {            document.title = OriginTitile;        }, 2000);    }});]]></content>
+        <content type="html"><![CDATA[// 防抖全局计时器let TT = null;    //time用来控制事件的触发// 防抖函数:fn->逻辑 time->防抖时间function debounce(fn, time) {    if (TT !== null) clearTimeout(TT);    TT = setTimeout(fn, time);}// 复制提醒// document.addEventListener("copy", function () {//     debounce(function () {//         new Vue({//             data: function () {//                 this.$notify({//                     title: "哎嘿！复制成功🍬",//                     message: "若要转载最好保留原文链接哦，给你一个大大的赞！",//                     position: 'top-left',//                     offset: 50,//                     showClose: true,//                     type: "success",//                     duration: 5000//                 });//             }//         })//     }, 300);// })var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);    var e=new Date("08/01/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),o=new Date("03/03/2023 00:00:00"),n=(now-o)/1e3/60/60/24,r=Math.floor(n),i=(now-o)/1e3/60/60-24*r,s=Math.floor(i);1==String(s).length&&(s="0"+s);var d=(now-o)/1e3/60-1440*r-60*s,l=Math.floor(d);1==String(l).length&&(l="0"+l);    var g=(now-o)/1e3-86400*r-3600*s-60*l,b=Math.round(g);1==String(b).length&&(b="0"+b);    let c="";c=s<18&&s>=9?`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`:`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=c)}setInterval((()=>{createtime()}),1e3);]]></content>
       
     </entry>
     
@@ -385,10 +391,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/runtime.js"/>
-      <url>/js/runtime.js</url>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
       
-        <content type="html"><![CDATA[// 防抖全局计时器let TT = null;    //time用来控制事件的触发// 防抖函数:fn->逻辑 time->防抖时间function debounce(fn, time) {    if (TT !== null) clearTimeout(TT);    TT = setTimeout(fn, time);}// 复制提醒// document.addEventListener("copy", function () {//     debounce(function () {//         new Vue({//             data: function () {//                 this.$notify({//                     title: "哎嘿！复制成功🍬",//                     message: "若要转载最好保留原文链接哦，给你一个大大的赞！",//                     position: 'top-left',//                     offset: 50,//                     showClose: true,//                     type: "success",//                     duration: 5000//                 });//             }//         })//     }, 300);// })var now=new Date;function createtime(){now.setTime(now.getTime()+1e3);    var e=new Date("08/01/2022 00:00:00"),t=Math.trunc(234e8+(now-e)/1e3*17),a=(t/1496e5).toFixed(6),o=new Date("03/03/2023 00:00:00"),n=(now-o)/1e3/60/60/24,r=Math.floor(n),i=(now-o)/1e3/60/60-24*r,s=Math.floor(i);1==String(s).length&&(s="0"+s);var d=(now-o)/1e3/60-1440*r-60*s,l=Math.floor(d);1==String(l).length&&(l="0"+l);    var g=(now-o)/1e3-86400*r-3600*s-60*l,b=Math.round(g);1==String(b).length&&(b="0"+b);    let c="";c=s<18&&s>=9?`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`:`<img class='boardsign' src='https://sourcebucket.s3.ladydaily.com/badge/F小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${r} 天 ${s} 小时 ${l} 分 ${b} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${t} 千米，约为 ${a} 个天文单位 🚀</div>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=c)}setInterval((()=>{createtime()}),1e3);]]></content>
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {    if (document.hidden) {        //离开当前页面时标签显示内容        document.title = '👀跑哪里去了~';        clearTimeout(titleTime);    } else {        //返回当前页面时标签显示内容        document.title = '🐖抓到你啦～';        //两秒后变回正常标题        titleTime = setTimeout(function () {            document.title = OriginTitile;        }, 2000);    }});]]></content>
       
     </entry>
     
@@ -417,9 +423,9 @@
     
     
     <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>电影</title>
+      <link href="/movies/index.html"/>
+      <url>/movies/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -428,9 +434,9 @@
     
     
     <entry>
-      <title>电影</title>
-      <link href="/movies/index.html"/>
-      <url>/movies/index.html</url>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
