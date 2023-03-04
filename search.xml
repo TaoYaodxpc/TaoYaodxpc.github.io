@@ -27,7 +27,7 @@
       <link href="/article/1.html"/>
       <url>/article/1.html</url>
       
-        <content type="html"><![CDATA[<h1 id="任务清单"><a href="#任务清单" class="headerlink" title="任务清单"></a>任务清单</h1><h2 id="零售门店管理："><a href="#零售门店管理：" class="headerlink" title="零售门店管理："></a>零售门店管理：</h2><p>门店信息包括：名称、地址、工作场所面积（单位：平方米）</p><h2 id="员工管理："><a href="#员工管理：" class="headerlink" title="员工管理："></a>员工管理：</h2><ol><li><p>员工信息包括：姓名、职位、电话、电邮、工作门店、偏好</p></li><li><p>职位可选值：门店经理，副经理，小组长，店员（收银，导购，库房）</p></li><li><p>偏好规则：</p><ol><li>工作日偏好：周几到周几工作。如：周３到周６.缺省为全部。</li><li>工作时间偏好：工作时间范围，如：上午８点到下午６点。缺省为全部。</li><li>班次时长偏好，每天时长不超过多久。如：４小时。缺省为不限制；每周最多工作多久等。如：２０小时。缺省为不限制。</li></ol></li></ol><h2 id="排班规则维护"><a href="#排班规则维护" class="headerlink" title="排班规则维护"></a>排班规则维护</h2><h3 id="固定规则"><a href="#固定规则" class="headerlink" title="固定规则"></a>固定规则</h3><ol><li><p>门店营业时间规则</p><ol><li>周一<del>周五：早9点</del>晚9点</li><li>周末：早10点~晚10点</li></ol></li><li><p>工作时长规则</p><ol><li>员工每周最多工作40小时</li><li>员工每天最多工作８小时</li><li>单个班次最少2小时，最多4小时。员工可以连续排多个班次</li><li>员工最长连续工作时长：4小时。达到连续工作时长，必须安排休息时间</li><li>必须给工作时间完全覆盖午餐、晚餐时间的员工，安排午餐或晚餐时间</li></ol></li><li><p>休息时间段:</p><ol><li>午餐时间：时间范围（如11点到14点，半小时）</li><li>晚餐时间：时间范围（如17点到20点，半小时）</li><li>休息时间：时间范围（不限。半小时）</li></ol></li></ol><h3 id="用户自定义规则"><a href="#用户自定义规则" class="headerlink" title="用户自定义规则"></a>用户自定义规则</h3><h4 id="排班规则"><a href="#排班规则" class="headerlink" title="排班规则"></a>排班规则</h4><ol><li><p>每天开店之前需要1小时做准备工作（如做清洁）。1为缺省值，可调整</p><ol><li><p>公式：门店面积&#x2F;100 &#x3D; 人数。100为缺省值，可调整</p></li><li><p>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（比如导购人员、收银，店经理等）</p></li></ol></li><li><p>每天至少安排三个不超过4小时的班次</p><ol><li>公式：预测客流&#x2F;3.8 &#x3D; 店员需求数。3.8为缺省值，可调整</li><li>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（比如导购人员、收银，店经理等）</li></ol></li><li><p>如果没有客流量的时候，至少需要1个店员值班.1为缺省值，可调整</p></li><li><p>每天关店之后需要2小时做收尾工作（如盘点、清算、清洁）。2为缺省值。可调整</p></li><li><p>公式：门店面积&#x2F;80 + 1 &#x3D; 人数。80和1为缺省值。可调整</p></li><li><p>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（ 比如导购人员、收银，店经理等）</p></li></ol><h2 id="业务预测数据"><a href="#业务预测数据" class="headerlink" title="业务预测数据"></a>业务预测数据</h2><p>本赛题主要从客流量做业务预测，下方为每天各时间段的示例数据，参赛团队可以按示例数据生成各个门店一段时间的详细预测数据。<br><img alt="预测数据" src="/img/智能排班/表格01.png"/></p><h1 id="任务说明"><a href="#任务说明" class="headerlink" title="任务说明"></a>任务说明</h1><h2 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h2><ul><li><p>某公司在某区域有 <strong>3 家销售门店</strong>，</p></li><li><p>公司目前有业务预测系统可以对各家门店销售情况进行预测，</p></li><li><p>需要基于预测数据以及业务波动，细化每天不同时间段不同技能的门店劳动力需求量，</p></li><li><p>保证业务高峰时人员充足，同时避免业务低谷时的人力浪费。</p></li></ul><h2 id="用户期望"><a href="#用户期望" class="headerlink" title="用户期望"></a>用户期望</h2><ul><li><p>门店管理者可以基于智能排班系统按周一键生成排班表，</p></li><li><p>同时根据时间、职位匹配度，自动把班次分配给适合的员工。</p></li><li><p>对于没有匹配员工的班次，按开放班次处理。 </p></li><li><p>排班表需要支持按日、按周查看，日视图和周视图里可以按技能，岗位和员工分组查看，</p></li><li><p>门店管理者可以编辑排班表，支持手动的班次指派，</p></li><li><p>可以把已经指派的班次重新分配给别的员工或者把未指派的开放班次分配给可用的员工。</p></li></ul><h1 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h1><h2 id="门店管理"><a href="#门店管理" class="headerlink" title="门店管理"></a>门店管理</h2><h3 id="思路一"><a href="#思路一" class="headerlink" title="思路一"></a>思路一</h3><ol><li>设置一个管理员（admin），可以增删改查各个门店，拥有所有权限</li><li>每个门店可登录系统后，增删改查本门店员工，和修改个人信息<ol><li>门店账号每个门店只有一个，一般由门店管理者（门店经理）掌控</li></ol></li></ol><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ol><li>开发简单</li><li>适合小型门店</li></ol><h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><ol><li>管理效率低，管理职责由一人承担</li><li>不适合大型门店</li></ol><h3 id="思路二"><a href="#思路二" class="headerlink" title="思路二"></a>思路二</h3><ol><li>设置一个管理员（admin），拥有所有权限</li><li>根据不同职位赋给员工相应权限<ol><li>比如说，一个门店经理，拥有本门店所有权限</li><li>门店副经理，只能crud除经理外员工信息，不能修改门店基本信息</li><li>小组长，可以crud本小组成员</li></ol></li></ol><h4 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h4><ol><li>管理效率高，分工明确</li><li>适合大型门店</li></ol><h4 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h4><ol><li>开发难度高（需要前端开发人员根据用户职位展示不同的页面）</li></ol><h2 id="员工管理"><a href="#员工管理" class="headerlink" title="员工管理"></a>员工管理</h2><h3 id="主要职务"><a href="#主要职务" class="headerlink" title="主要职务"></a>主要职务</h3><ol><li>门店经理</li><li>门店副经理</li><li>小组组长</li><li>店员（收银，导购，库房）</li></ol><h3 id="实现思路-1"><a href="#实现思路-1" class="headerlink" title="实现思路"></a>实现思路</h3><ol><li><p>不同职务的人员拥有不同权限</p></li><li><p>每个员工都具备一个账号（使用邮箱登录），登录后可修改本人信息</p></li></ol><h2 id="业务数据预测"><a href="#业务数据预测" class="headerlink" title="业务数据预测"></a>业务数据预测</h2><p><img src="/img/%E6%99%BA%E8%83%BD%E6%8E%92%E7%8F%AD/%E8%A1%A8%E6%A0%BC01.png" alt="表格01"></p><h2 id="排班"><a href="#排班" class="headerlink" title="排班"></a>排班</h2><h3 id="排班规则管理"><a href="#排班规则管理" class="headerlink" title="排班规则管理"></a>排班规则管理</h3><ol><li>只有管理员（门店经理）可以设置和修改规则</li></ol><h3 id="具体排班"><a href="#具体排班" class="headerlink" title="具体排班"></a>具体排班</h3><ol><li>根据不同排班规则采取合适的算法，形成排班表，支持多种查看方式</li><li>管理者可直接手动更改排班表<ol><li>第一次生成的排班表为算法生成，此为默认排班表</li><li>管理者可点击重置按钮，恢复默认排班表</li><li>只有管理员才可生成排班表并发布（只能发布一张），供员工查看</li><li>员工只能查看管理员发布的唯一排班表</li></ol></li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="任务清单"><a href="#任务清单" class="headerlink" title="任务清单"></a>任务清单</h1><h2 id="零售门店管理："><a href="#零售门店管理：" class="headerlink" title="零售门店管理："></a>零售门店管理：</h2><p>门店信息包括：名称、地址、工作场所面积（单位：平方米）</p><h2 id="员工管理："><a href="#员工管理：" class="headerlink" title="员工管理："></a>员工管理：</h2><ol><li><p>员工信息包括：姓名、职位、电话、电邮、工作门店、偏好</p></li><li><p>职位可选值：门店经理，副经理，小组长，店员（收银，导购，库房）</p></li><li><p>偏好规则：</p><ol><li>工作日偏好：周几到周几工作。如：周３到周６.缺省为全部。</li><li>工作时间偏好：工作时间范围，如：上午８点到下午６点。缺省为全部。</li><li>班次时长偏好，每天时长不超过多久。如：４小时。缺省为不限制；每周最多工作多久等。如：２０小时。缺省为不限制。</li></ol></li></ol><h2 id="排班规则维护"><a href="#排班规则维护" class="headerlink" title="排班规则维护"></a>排班规则维护</h2><h3 id="固定规则"><a href="#固定规则" class="headerlink" title="固定规则"></a>固定规则</h3><ol><li><p>门店营业时间规则</p><ol><li>周一<del>周五：早9点</del>晚9点</li><li>周末：早10点~晚10点</li></ol></li><li><p>工作时长规则</p><ol><li>员工每周最多工作40小时</li><li>员工每天最多工作８小时</li><li>单个班次最少2小时，最多4小时。员工可以连续排多个班次</li><li>员工最长连续工作时长：4小时。达到连续工作时长，必须安排休息时间</li><li>必须给工作时间完全覆盖午餐、晚餐时间的员工，安排午餐或晚餐时间</li></ol></li><li><p>休息时间段:</p><ol><li>午餐时间：时间范围（如11点到14点，半小时）</li><li>晚餐时间：时间范围（如17点到20点，半小时）</li><li>休息时间：时间范围（不限。半小时）</li></ol></li></ol><h3 id="用户自定义规则"><a href="#用户自定义规则" class="headerlink" title="用户自定义规则"></a>用户自定义规则</h3><h4 id="排班规则"><a href="#排班规则" class="headerlink" title="排班规则"></a>排班规则</h4><ol><li><p>每天开店之前需要1小时做准备工作（如做清洁）。1为缺省值，可调整</p><ol><li><p>公式：门店面积&#x2F;100 &#x3D; 人数。100为缺省值，可调整</p></li><li><p>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（比如导购人员、收银，店经理等）</p></li></ol></li><li><p>每天至少安排三个不超过4小时的班次</p><ol><li>公式：预测客流&#x2F;3.8 &#x3D; 店员需求数。3.8为缺省值，可调整</li><li>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（比如导购人员、收银，店经理等）</li></ol></li><li><p>如果没有客流量的时候，至少需要1个店员值班.1为缺省值，可调整</p></li><li><p>每天关店之后需要2小时做收尾工作（如盘点、清算、清洁）。2为缺省值。可调整</p></li><li><p>公式：门店面积&#x2F;80 + 1 &#x3D; 人数。80和1为缺省值。可调整</p></li><li><p>用户可以设置允许执行此类工作的职位。可以设置为所有职位，也可以限制特定职位（ 比如导购人员、收银，店经理等）</p></li></ol><h2 id="业务预测数据"><a href="#业务预测数据" class="headerlink" title="业务预测数据"></a>业务预测数据</h2><p>本赛题主要从客流量做业务预测，下方为每天各时间段的示例数据，参赛团队可以按示例数据生成各个门店一段时间的详细预测数据。<br><img alt="预测数据" src="/img/智能排班/表格01.png"/></p><h1 id="任务说明"><a href="#任务说明" class="headerlink" title="任务说明"></a>任务说明</h1><h2 id="问题说明"><a href="#问题说明" class="headerlink" title="问题说明"></a>问题说明</h2><ul><li><p>某公司在某区域有 <strong>3 家销售门店</strong>，</p></li><li><p>公司目前有业务预测系统可以对各家门店销售情况进行预测，</p></li><li><p>需要基于预测数据以及业务波动，细化每天不同时间段不同技能的门店劳动力需求量，</p></li><li><p>保证业务高峰时人员充足，同时避免业务低谷时的人力浪费。</p></li></ul><h2 id="用户期望"><a href="#用户期望" class="headerlink" title="用户期望"></a>用户期望</h2><ul><li><p>门店管理者可以基于智能排班系统按周一键生成排班表，</p></li><li><p>同时根据时间、职位匹配度，自动把班次分配给适合的员工。</p></li><li><p>对于没有匹配员工的班次，按开放班次处理。 </p></li><li><p>排班表需要支持按日、按周查看，日视图和周视图里可以按技能，岗位和员工分组查看，</p></li><li><p>门店管理者可以编辑排班表，支持手动的班次指派，</p></li><li><p>可以把已经指派的班次重新分配给别的员工或者把未指派的开放班次分配给可用的员工。</p></li></ul><h1 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h1><h2 id="门店管理"><a href="#门店管理" class="headerlink" title="门店管理"></a>门店管理</h2><h3 id="思路一"><a href="#思路一" class="headerlink" title="思路一"></a>思路一</h3><ol><li>设置一个管理员（admin），可以增删改查各个门店，拥有所有权限</li><li>每个门店可登录系统后，增删改查本门店员工，和修改个人信息<ol><li>门店账号每个门店只有一个，一般由门店管理者（门店经理）掌控</li></ol></li></ol><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ol><li>开发简单</li><li>适合小型门店</li></ol><h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><ol><li>管理效率低，管理职责由一人承担</li><li>不适合大型门店</li></ol><h3 id="思路二"><a href="#思路二" class="headerlink" title="思路二"></a>思路二</h3><ol><li>设置一个管理员（admin），拥有所有权限</li><li>根据不同职位赋给员工相应权限<ol><li>比如说，一个门店经理，拥有本门店所有权限</li><li>门店副经理，只能crud除经理外员工信息，不能修改门店基本信息</li><li>小组长，可以crud本小组成员</li></ol></li></ol><h4 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h4><ol><li>管理效率高，分工明确</li><li>适合大型门店</li></ol><h4 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h4><ol><li>开发难度高（需要前端开发人员根据用户职位展示不同的页面）</li></ol><h2 id="员工管理"><a href="#员工管理" class="headerlink" title="员工管理"></a>员工管理</h2><h3 id="主要职务"><a href="#主要职务" class="headerlink" title="主要职务"></a>主要职务</h3><ol><li>门店经理</li><li>门店副经理</li><li>小组组长</li><li>店员（收银，导购，库房）</li></ol><h3 id="实现思路-1"><a href="#实现思路-1" class="headerlink" title="实现思路"></a>实现思路</h3><ol><li><p>不同职务的人员拥有不同权限</p></li><li><p>每个员工都具备一个账号（使用邮箱登录），登录后可修改本人信息</p></li></ol><h2 id="员工偏好管理"><a href="#员工偏好管理" class="headerlink" title="员工偏好管理"></a>员工偏好管理</h2><h3 id="表结构"><a href="#表结构" class="headerlink" title="表结构"></a>表结构</h3><h4 id="tbl-hobby"><a href="#tbl-hobby" class="headerlink" title="tbl_hobby"></a>tbl_hobby</h4><ul><li><p>偏好类型由前端提供</p></li><li><p>name为员工偏好类型</p></li><li><p>其中的value具体存入员工偏好</p></li><li><p>hobby表中可能对应有多条数据对应一个员工</p></li></ul><h2 id="业务数据预测"><a href="#业务数据预测" class="headerlink" title="业务数据预测"></a>业务数据预测</h2><p><img src="/img/%E6%99%BA%E8%83%BD%E6%8E%92%E7%8F%AD/%E8%A1%A8%E6%A0%BC01.png" alt="表格01"></p><h2 id="排班"><a href="#排班" class="headerlink" title="排班"></a>排班</h2><h3 id="排班规则管理"><a href="#排班规则管理" class="headerlink" title="排班规则管理"></a>排班规则管理</h3><ol><li>只有管理员（门店经理）可以设置和修改规则</li></ol><h3 id="具体排班"><a href="#具体排班" class="headerlink" title="具体排班"></a>具体排班</h3><ol><li>根据不同排班规则采取合适的算法，形成排班表，支持多种查看方式</li><li>管理者可直接手动更改排班表<ol><li>第一次生成的排班表为算法生成，此为默认排班表</li><li>管理者可点击重置按钮，恢复默认排班表</li><li>只有管理员才可生成排班表并发布（只能发布一张），供员工查看</li><li>员工只能查看管理员发布的唯一排班表</li></ol></li></ol>]]></content>
       
       
       <categories>
@@ -65,7 +65,7 @@
       <link href="/article/15691.html"/>
       <url>/article/15691.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Linux环境及软件下载"><a href="#Linux环境及软件下载" class="headerlink" title="Linux环境及软件下载"></a>Linux环境及软件下载</h1><h2 id="Vmware-Workstation"><a href="#Vmware-Workstation" class="headerlink" title="Vmware Workstation"></a>Vmware Workstation</h2><h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p><code>https://www.vmware.com/cn/products/workstation-pro.html</code></p><h3 id="打开网络连接页面"><a href="#打开网络连接页面" class="headerlink" title="打开网络连接页面"></a>打开网络连接页面</h3><ul><li>输入win+R，再输入<code>ncpa.cpl</code></li></ul><h2 id="FinalShell"><a href="#FinalShell" class="headerlink" title="FinalShell"></a>FinalShell</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><h3 id="SSH连接虚拟机"><a href="#SSH连接虚拟机" class="headerlink" title="SSH连接虚拟机"></a>SSH连接虚拟机</h3><h4 id="查看虚拟机的ip"><a href="#查看虚拟机的ip" class="headerlink" title="查看虚拟机的ip"></a>查看虚拟机的ip</h4><ul><li><p>再Linux操作系统中，桌面空白右键点击：open in terminal</p></li><li><p>在终端输入<code>ifconfig</code></p></li></ul><h2 id="Windows-配置WSL-Ubuntu-环境"><a href="#Windows-配置WSL-Ubuntu-环境" class="headerlink" title="Windows 配置WSL(Ubuntu)环境"></a>Windows 配置WSL(Ubuntu)环境</h2><ul><li>WSL: Windows Subsystem for Linux, 是用于Windows系统上的Linux子系统。</li><li>Windows10 的WSL功能可以直接使用主机的物理硬件，构建Linux操作系统，不影响Windows系统本身的运行</li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="Linux环境及软件下载"><a href="#Linux环境及软件下载" class="headerlink" title="Linux环境及软件下载"></a>Linux环境及软件下载</h1><h2 id="Vmware-Workstation"><a href="#Vmware-Workstation" class="headerlink" title="Vmware Workstation"></a>Vmware Workstation</h2><h3 id="官网"><a href="#官网" class="headerlink" title="官网"></a>官网</h3><p><code>https://www.vmware.com/cn/products/workstation-pro.html</code></p><h3 id="打开网络连接页面"><a href="#打开网络连接页面" class="headerlink" title="打开网络连接页面"></a>打开网络连接页面</h3><ul><li>输入win+R，再输入<code>ncpa.cpl</code></li></ul><h2 id="FinalShell"><a href="#FinalShell" class="headerlink" title="FinalShell"></a>FinalShell</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><h3 id="SSH连接虚拟机"><a href="#SSH连接虚拟机" class="headerlink" title="SSH连接虚拟机"></a>SSH连接虚拟机</h3><h4 id="查看虚拟机的ip"><a href="#查看虚拟机的ip" class="headerlink" title="查看虚拟机的ip"></a>查看虚拟机的ip</h4><ul><li><p>再Linux操作系统中，桌面空白右键点击：open in terminal</p></li><li><p>在终端输入<code>ifconfig</code></p></li></ul><h2 id="Windows-配置WSL-Ubuntu-环境"><a href="#Windows-配置WSL-Ubuntu-环境" class="headerlink" title="Windows 配置WSL(Ubuntu)环境"></a>Windows 配置WSL(Ubuntu)环境</h2><ul><li>WSL: Windows Subsystem for Linux, 是用于Windows系统上的Linux子系统。</li><li>Windows10 的WSL功能可以直接使用主机的物理硬件，构建Linux操作系统，不影响Windows系统本身的运行</li></ul><h2 id="虚拟机快照"><a href="#虚拟机快照" class="headerlink" title="虚拟机快照"></a>虚拟机快照</h2><ul><li>通过快照将当前虚拟机的状态保存下来，在以后可以通过快照恢复虚拟机到保存的状态</li><li>推荐先将虚拟机关机</li></ul><h1 id="Linux基础命令"><a href="#Linux基础命令" class="headerlink" title="Linux基础命令"></a>Linux基础命令</h1><h2 id="Linux的目录结构"><a href="#Linux的目录结构" class="headerlink" title="Linux的目录结构"></a>Linux的目录结构</h2><ul><li>Linux的目录结构是一个树形结构</li><li>Linux没有盘符这个概念，只有一个根目录 &#x2F;，所有文件都在它下面</li></ul><p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/27/20221027214128.png" alt="image-20221027214128453"></p><ul><li><code>/</code>，根目录是最顶级的目录了</li><li>Linux只有一个顶级目录：<code>/</code></li><li>路径描述的层次关系同样适用<code>/</code>来表示</li><li>&#x2F;home&#x2F;itheima&#x2F;a.txt，表示根目录下的home文件夹内有itheima文件夹，内有a.txt</li></ul><h2 id="Linux命令基础格式"><a href="#Linux命令基础格式" class="headerlink" title="Linux命令基础格式"></a>Linux命令基础格式</h2><ul><li><code>command [-options] [parameter]</code><ul><li><code>command</code> : 命令本身</li><li><code>-options</code> : [可选，非必填]命令的一些选项，可以通过选项控制命令的行为细节</li><li><code>parameter</code> : [可选，非必填]命令的参数，多数用于命令的指向目标等</li></ul></li><li>例如：<code>ls - l /home/itheima</code> , ls是命令本身，-l是选项，&#x2F;home&#x2F;itheima是参数<ul><li>意思是以列表的形式，显示&#x2F;home&#x2F;itheima目录内的内容</li></ul></li></ul><h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><h3 id="ls-命令"><a href="#ls-命令" class="headerlink" title="ls 命令"></a>ls 命令</h3><p>功能：列出文件夹信息</p><p>语法：<code>ls [-l -h -a] [参数]</code></p><ul><li>参数：被查看的文件夹，不提供参数，表示查看当前工作目录</li><li><code>-l </code>，以列表形式查看</li><li><code>-h</code>，配合 -l ，以更加人性化的方式显示文件大小</li><li><code>-a</code>，显示隐藏文件</li></ul><p>示例：</p><ul><li><code>ls -lha /usr/local</code> ：以列表形式展示所有文件及其文件大小</li></ul><h4 id="隐藏文件、文件夹"><a href="#隐藏文件、文件夹" class="headerlink" title="隐藏文件、文件夹"></a>隐藏文件、文件夹</h4><p>在Linux中以<code>.</code>开头的，均是隐藏的。</p><p>默认不显示出来，需要<code>-a</code>选项才可查看到。</p><h3 id="cd命令"><a href="#cd命令" class="headerlink" title="cd命令"></a>cd命令</h3><p>功能：切换工作目录</p><p>语法：<code>cd [目标目录]</code></p><p>参数：目标目录，要切换去的地方，不提供默认切换到<code>当前登录用户HOME目录</code></p><h4 id="pwd命令"><a href="#pwd命令" class="headerlink" title="pwd命令"></a>pwd命令</h4><p>功能：展示当前工作目录</p><p>语法：<code>pwd</code></p><h4 id="HOME目录"><a href="#HOME目录" class="headerlink" title="HOME目录"></a>HOME目录</h4><p>每一个用户在Linux系统中都有自己的专属工作目录，称之为HOME目录。</p><ul><li><p>普通用户的HOME目录，默认在：<code>/home/用户名</code></p></li><li><p>root用户的HOME目录，在：<code>/root</code></p></li></ul><p>FinalShell登陆终端后，默认的工作目录就是用户的HOME目录</p><h4 id="相对路径、绝对路径"><a href="#相对路径、绝对路径" class="headerlink" title="相对路径、绝对路径"></a>相对路径、绝对路径</h4><ul><li><p>相对路径，&#x3D;&#x3D;非&#x3D;&#x3D;<code>/</code>开头的称之为相对路径</p><p>相对路径表示以<code>当前目录</code>作为起点，去描述路径，如<code>test/a.txt</code>，表示当前工作目录内的test文件夹内的a.txt文件</p></li><li><p>绝对路径，&#x3D;&#x3D;以&#x3D;&#x3D;<code>/</code>开头的称之为绝对路径</p><p>绝对路径从<code>根</code>开始描述路径</p></li></ul><h4 id="特殊路径符"><a href="#特殊路径符" class="headerlink" title="特殊路径符"></a>特殊路径符</h4><ul><li><code>.</code>，表示当前，比如.&#x2F;a.txt，表示当前文件夹内的<code>a.txt</code>文件</li><li><code>..</code>，表示上级目录，比如<code>../</code>表示上级目录，<code>../../</code>表示上级的上级目录</li><li><code>~</code>，表示用户的HOME目录，比如<code>cd ~</code>，即可切回用户HOME目录</li></ul><h3 id="创建文件夹命令"><a href="#创建文件夹命令" class="headerlink" title="创建文件夹命令"></a>创建文件夹命令</h3><h4 id="mkdir命令"><a href="#mkdir命令" class="headerlink" title="mkdir命令"></a>mkdir命令</h4><p>功能：创建文件夹</p><p>语法：<code>mkdir [-p] 参数</code></p><ul><li>参数：被创建文件夹的路径</li><li>选项：-p，可选，表示创建前置路径</li></ul><p>示例：</p><ul><li><code>mkdir /usr/local/nginx</code></li><li><code>mkdir -p /usr/local/mysql/mysql80</code> : 创建多层级目录&#x2F;mysql&#x2F;myql80</li></ul><h4 id="touch命令"><a href="#touch命令" class="headerlink" title="touch命令"></a>touch命令</h4><p>功能：创建文件</p><p>语法：<code>touch 参数</code></p><ul><li>参数：被创建的文件路径</li></ul><p>示例：</p><ul><li><code>touch test.txt</code></li><li><code>touch /usr/local/test.txt</code></li></ul><h3 id="查看文件内容命令"><a href="#查看文件内容命令" class="headerlink" title="查看文件内容命令"></a>查看文件内容命令</h3><h4 id="cat命令"><a href="#cat命令" class="headerlink" title="cat命令"></a>cat命令</h4><p>功能：查看文件内容</p><p>语法：<code>cat 参数</code></p><ul><li>参数：被查看的文件路径</li></ul><p>示例：</p><ul><li><code>cat /etc/service</code></li></ul><h4 id="more命令"><a href="#more命令" class="headerlink" title="more命令"></a>more命令</h4><p>功能：查看文件，可以支持翻页查看</p><p>语法：<code>more 参数</code></p><ul><li>参数：被查看的文件路径</li><li>在查看过程中：<ul><li><code>空格</code>键翻页</li><li><code>q</code>退出查看</li></ul></li></ul><p>示例：</p><ul><li><code>more /etc/service</code></li></ul><h3 id="cp命令"><a href="#cp命令" class="headerlink" title="cp命令"></a>cp命令</h3><p>功能：复制文件、文件夹</p><p>语法：<code>cp [-r] 参数1 参数2</code></p><ul><li>参数1，被复制的</li><li>参数2，要复制去的地方</li><li>选项：-r，可选，复制文件夹使用</li></ul><p>示例：</p><ul><li><code>cp a.txt b.txt</code>，复制当前目录下a.txt为b.txt</li><li><code>cp a.txt test/</code>，复制当前目录a.txt到test文件夹内</li><li><code>cp -r test test2</code>，复制文件夹test到当前文件夹内为test2存在</li></ul><h3 id="mv命令"><a href="#mv命令" class="headerlink" title="mv命令"></a>mv命令</h3><p>功能：移动文件、文件夹</p><p>语法：<code>mv 参数1 参数2</code></p><ul><li>参数1：被移动的</li><li>参数2：要移动去的地方，参数2如果不存在，则会进行改名</li></ul><h3 id="rm命令"><a href="#rm命令" class="headerlink" title="rm命令"></a>rm命令</h3><h4 id="切换管理员root"><a href="#切换管理员root" class="headerlink" title="切换管理员root"></a>切换管理员root</h4><ul><li><p>不要一直使用root用户</p></li><li><p>输入 <code>su - root</code> 后 再输入密码 即可切换root用户</p></li><li><p>输入<code>exit</code> 可切换回普通用户</p></li></ul><p>功能：删除文件、文件夹</p><p>语法：<code>rm [-r -f] 参数...参数</code></p><ul><li>参数：支持多个，每一个表示被删除的，空格进行分隔</li><li>选项：-r，删除文件夹使用</li><li>选项：-f，强制删除，不会给出确认提示，一般root用户会用到</li></ul><blockquote><p>rm命令很危险，一定要注意，特别是切换到root用户的时候。</p></blockquote><h3 id="which命令"><a href="#which命令" class="headerlink" title="which命令"></a>which命令</h3><p>功能：查看命令的程序本体文件路径</p><p>语法：<code>which 参数</code></p><ul><li>参数：被查看的命令</li></ul><p>示例：</p><ul><li><code>which cd</code> ：查看 cd 命令程序文件</li></ul><h3 id="find命令"><a href="#find命令" class="headerlink" title="find命令"></a>find命令</h3><p>功能：搜索文件</p><p>语法1: 按文件名搜索：<code>find 路径 -name 参数</code></p><ul><li>路径，搜索的起始路径</li><li>参数，搜索的关键字，支持通配符*， 比如：<code>*</code>test表示搜索任意以test结尾的文件</li></ul><p>示例：</p><ul><li><code>find / -name &quot;test&quot;</code> : 从根目录搜索 test 目录</li><li><code>find /usr -name &quot;*test&quot;</code> : 从usr目录下搜索以 test 结尾的文件</li></ul><p>语法2：按文件大小查找文件：<code>find 起始路径 -size + | -n[kMG]</code></p><ul><li><code>+、-</code> ：表示大于和小于</li><li><code>n</code> : 表示数字大小</li><li>kMG 表示大小单位，k表示kb，M表示MB，G表示GB</li></ul><p>示例：</p><ul><li><code>find / -size -10k</code>：在根目录下 查找小于10kb的文件</li><li><code>find / -size +10M</code> : 在根目录下 查找大于10MB的文件</li></ul><h3 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h3><p>功能：过滤关键字</p><p>语法：<code>grep [-n] 关键字 文件路径</code></p><ul><li>选项-n，可选，表示在结果中显示匹配的行的行号。</li><li>参数，关键字，必填，表示过滤的关键字，带有空格或其它特殊符号，建议使用””将关键字包围起来</li><li>参数，文件路径，必填，表示要过滤内容的文件路径，可作为内容输入端口</li></ul><p>示例：</p><ul><li><code>grep -n &quot;hahaha&quot; test.txt</code> : 查找test.txt中含有hahaha的行及其行号</li></ul><blockquote><p>参数文件路径，可以作为管道符的输入</p></blockquote><h3 id="管道符"><a href="#管道符" class="headerlink" title="管道符|"></a>管道符|</h3><p>写法：<code>|</code></p><p>功能：将符号左边的结果，作为符号右边的输入</p><p>示例：</p><ul><li><code>cat a.txt | grep itheima</code>，将cat a.txt的结果，作为grep命令的输入，用来过滤<code>itheima</code>关键字</li><li><code>ls -lh /usr/bin | grep gtf</code></li><li><code>ls -al /usr/bin | wc -l</code> ：可以输出文件数量</li></ul><p>可以支持嵌套：</p><ul><li><code>cat a.txt | grep itheima | grep itcast</code></li></ul><h3 id="wc命令"><a href="#wc命令" class="headerlink" title="wc命令"></a>wc命令</h3><p>功能：统计</p><p>语法：<code>wc [-c -m -l -w] 文件路径</code></p><ul><li>选项，-c，统计bytes数量</li><li>选项，-m，统计字符数量</li><li>选项，-l，统计行数</li><li>选项，-w，统计单词数量</li><li>参数，文件路径，被统计的文件，可作为内容输入端口</li></ul><p>示例：</p><ul><li><code>wc -c test.txt</code></li></ul><blockquote><p>参数文件路径，可作为管道符的输入</p></blockquote><h3 id="echo命令"><a href="#echo命令" class="headerlink" title="echo命令"></a>echo命令</h3><p>功能：输出内容</p><p>语法：<code>echo 参数</code></p><ul><li>参数：被输出的内容</li></ul><p>示例：</p><ul><li><code>echo &quot;hello world&quot;</code></li></ul><h3 id="96-反引号"><a href="#96-反引号" class="headerlink" title="&#96;反引号"></a>&#96;反引号</h3><p>功能：被两个反引号包围的内容，会作为命令执行</p><p>示例：</p><ul><li>echo `pwd`，会输出当前工作目录</li></ul><h3 id="重定向符"><a href="#重定向符" class="headerlink" title="重定向符"></a>重定向符</h3><ul><li><code>&gt;</code> : 将左侧命令的结果，<strong>覆盖</strong>写入符号右侧指定的文件中</li><li><code>&gt;&gt;</code> : 将左侧命令的结果，<strong>追加</strong>写入到符号右侧指定的文件中</li></ul><p>示例：</p><ul><li><code>echo &quot;hello world&quot; &gt; test.txt</code></li><li><code>echo &quot;hello Linux&quot; &gt;&gt; test.txt</code></li></ul><h3 id="tail命令"><a href="#tail命令" class="headerlink" title="tail命令"></a>tail命令</h3><p>功能：查看文件尾部内容</p><p>语法：<code>tail [-f -num] 参数</code></p><ul><li>参数：被查看的文件</li><li>选项：<ul><li>-f，持续跟踪文件修改</li><li>-num : 表示，查看尾部多少行，不填默认10行</li></ul></li></ul><p>示例：</p><ul><li><code>tail -15 test.txt</code> : 查看尾部15行</li><li><code>tail -f test.txt</code> : 持续输出文件内容，跟踪文件修改</li></ul><h3 id="head命令"><a href="#head命令" class="headerlink" title="head命令"></a>head命令</h3><p>功能：查看文件头部内容</p><p>语法：<code>head [-n] 参数</code></p><ul><li>参数：被查看的文件</li><li>选项：-n，查看的行数</li></ul><h3 id="重定向符-1"><a href="#重定向符-1" class="headerlink" title="重定向符"></a>重定向符</h3><p>功能：将符号左边的结果，输出到右边指定的文件中去</p><ul><li><code>&gt;</code>，表示覆盖输出</li><li><code>&gt;&gt;</code>，表示追加输出</li></ul><h2 id="vi编辑器"><a href="#vi编辑器" class="headerlink" title="vi编辑器"></a>vi编辑器</h2><h3 id="命令模式快捷键"><a href="#命令模式快捷键" class="headerlink" title="命令模式快捷键"></a>命令模式快捷键</h3><p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/27/20221027215841.png" alt="image-20221027215841573"></p><p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/27/20221027215846.png" alt="image-20221027215846581"></p><p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/27/20221027215849.png" alt="image-20221027215849668"></p><h3 id="底线命令快捷键"><a href="#底线命令快捷键" class="headerlink" title="底线命令快捷键"></a>底线命令快捷键</h3><p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/27/20221027215858.png" alt="image-20221027215858967"></p><h2 id="命令的选项"><a href="#命令的选项" class="headerlink" title="命令的选项"></a>命令的选项</h2><p>我们学习的一系列Linux命令，它们所拥有的选项都是非常多的。</p><p>比如，简单的ls命令就有：-a -A -b -c -C -d -D -f -F -g -G -h -H -i -I -k -l -L -m -n -N -o -p -q -Q -r-R -s -S -t -T -u -U -v -w -x -X -1等选项，可以发现选项是极其多的。</p><p>课程中， 并不会将全部的选项都进行讲解，否则，一个ls命令就可能讲解2小时之久。</p><p>课程中，会对常见的选项进行讲解， 足够满足绝大多数的学习、工作场景。</p><h3 id="查看命令的帮助"><a href="#查看命令的帮助" class="headerlink" title="查看命令的帮助"></a>查看命令的帮助</h3><p>可以通过：<code>命令 --help</code>查看命令的帮助手册</p><p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/27/20221027220005.png" alt="image-20221027220005610"></p><h3 id="查看命令的详细手册"><a href="#查看命令的详细手册" class="headerlink" title="查看命令的详细手册"></a>查看命令的详细手册</h3><p>可以通过：<code>man 命令</code>查看某命令的详细手册</p><p><img src="https://image-set.oss-cn-zhangjiakou.aliyuncs.com/img-out/2022/10/27/20221027220010.png" alt="image-20221027220009949"></p><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
       
       
       <categories>
@@ -226,21 +226,32 @@
     
     <entry>
       <title></title>
-      <link href="/css/cat.css"/>
-      <url>/css/cat.css</url>
+      <link href="/css/kslink.css"/>
+      <url>/css/kslink.css</url>
       
-        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #6f42c1;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
+        <content type="html"><![CDATA[/* 添加友链按钮 *//* 快速填写格式 */.addBtn {    display: flex;    justify-content: center;    flex-wrap: wrap;}.addBtn button {    transition: .2s;    display: flex;    margin: 5px auto;    color: var(--global-bg);    padding: 15px;    border-radius: 40px;    background: var(--search-result-title);    align-items: center;}button {    padding: 0;    outline: 0;    border: none;    background: 0 0;    cursor: pointer;    touch-action: manipulation;}.fa-solid, .fas {    font-family: "Font Awesome 6 Free";    font-weight: 900;}.addBtn i {    font-size: 1.3rem;    margin-right: 10px;}.addBtn button:hover {    background: var(--theme-color);    color: #fff;}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/css/readPercent.css"/>
+      <url>/css/readPercent.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/cat.css"/>
+      <url>/css/cat.css</url>
+      
+        <content type="html"><![CDATA[body::-webkit-scrollbar {    width: 0;}.neko {    width: 64px;    height: 64px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812db74be9.png");    position: absolute;    right: 32px;    background-repeat: no-repeat;    background-size: contain;    transform: translateX(50%);    cursor: pointer;    font-family: tzy;    font-weight: 600;    font-size: 16px;    color: #6f42c1;    display: none;}.neko::after {    display: none;    width: 100px;    height: 100px;    background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");    background-size: contain;    z-index: 9999;    position: absolute;    right: 50%;    text-align: center;    line-height: 100px;    top: -115%;}.neko.showMsg::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko:hover::after {    content: attr(data-msg);    display: block;    overflow: hidden;    text-overflow: ellipsis;}.neko.fontColor::after {    color: #333;}/** * @description: 滚动条样式  跟猫二选一 */@media screen and (max-width:992px) {    ::-webkit-scrollbar {        width: 8px !important;        height: 8px !important    }    ::-webkit-scrollbar-track {        border-radius: 2em;    }    ::-webkit-scrollbar-thumb {        background-color: rgb(255 255 255 / .3);        background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);        border-radius: 2em    }    ::-webkit-scrollbar-corner {        background-color: transparent    }}]]></content>
       
     </entry>
     
@@ -259,65 +270,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/kslink.css"/>
-      <url>/css/kslink.css</url>
-      
-        <content type="html"><![CDATA[/* 添加友链按钮 *//* 快速填写格式 */.addBtn {    display: flex;    justify-content: center;    flex-wrap: wrap;}.addBtn button {    transition: .2s;    display: flex;    margin: 5px auto;    color: var(--global-bg);    padding: 15px;    border-radius: 40px;    background: var(--search-result-title);    align-items: center;}button {    padding: 0;    outline: 0;    border: none;    background: 0 0;    cursor: pointer;    touch-action: manipulation;}.fa-solid, .fas {    font-family: "Font Awesome 6 Free";    font-weight: 900;}.addBtn i {    font-size: 1.3rem;    margin-right: 10px;}.addBtn button:hover {    background: var(--theme-color);    color: #fff;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/universe.css"/>
       <url>/css/universe.css</url>
       
         <content type="html"><![CDATA[/* 背景宇宙星光  */#universe{    display: block;    position: fixed;    margin: 0;    padding: 0;    border: 0;    outline: 0;    left: 0;    top: 0;    width: 100%;    height: 100%;    pointer-events: none;    /* 这个是调置顶的优先级的，-1在文章页下面，背景上面，个人推荐这种 */    z-index: -1;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/readPercent.css"/>
-      <url>/css/readPercent.css</url>
-      
-        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>轻音，武道馆</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[<div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div><link rel="stylesheet" href="/css/kslink.css"><script src="/js/kslink.js"></script>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/cat.js"/>
-      <url>/js/cat.js</url>
-      
-        <content type="html"><![CDATA[if (document.body.clientWidth > 992) {    function getBasicInfo() {        /* 窗口高度 */        var ViewH = $(window).height();        /* document高度 */        var DocH = $("body")[0].scrollHeight;        /* 滚动的高度 */        var ScrollTop = $(window).scrollTop();        /* 可滚动的高度 */        var S_V = DocH - ViewH;        var Band_H = ScrollTop / (DocH - ViewH) * 100;        return {            ViewH: ViewH,            DocH: DocH,            ScrollTop: ScrollTop,            Band_H: Band_H,            S_V: S_V        }    };    function show(basicInfo) {        if (basicInfo.ScrollTop > 0.001) {            $(".neko").css('display', 'block');        } else {            $(".neko").css('display', 'none');        }    }    (function ($) {        $.fn.nekoScroll = function (option) {            var defaultSetting = {                top: '0',                scroWidth: 6 + 'px',                z_index: 9999,                zoom: 0.9,                borderRadius: 5 + 'px',                right: 60 + 'px',                // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图                nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",                hoverMsg: "喵喵喵~",                color: "#6f42c1",                during: 500,                blog_body: "body",            };            var setting = $.extend(defaultSetting, option);            var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +                this.prop("id") : this.prop("nodeName");            if ($(".neko").length == 0) {                this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");            }            let basicInfo = getBasicInfo();            $(getThis)                .css({                    'position': 'fixed',                    'width': setting.scroWidth,                    'top': setting.top,                    'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                    'z-index': setting.z_index,                    'background-color': setting.bgcolor,                    "border-radius": setting.borderRadius,                    'right': setting.right,                    'background-image': 'url(' + setting.scImg + ')',                    'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                    'background-size': 'contain'                });            $("#" + setting.nekoname)                .css({                    'position': 'fixed',                    'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                    'z-index': setting.z_index * 10,                    'right': setting.right,                    'background-image': 'url(' + setting.nekoImg + ')',                });            show(getBasicInfo());            $(window)                .scroll(function () {                    let basicInfo = getBasicInfo();                    show(basicInfo);                    $(getThis)                        .css({                            'position': 'fixed',                            'width': setting.scroWidth,                            'top': setting.top,                            'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                            'z-index': setting.z_index,                            'background-color': setting.bgcolor,                            "border-radius": setting.borderRadius,                            'right': setting.right,                            'background-image': 'url(' + setting.scImg + ')',                            'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                            'background-size': 'contain'                        });                    $("#" + setting.nekoname)                        .css({                            'position': 'fixed',                            'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                            'z-index': setting.z_index * 10,                            'right': setting.right,                            'background-image': 'url(' + setting.nekoImg + ')',                        });                    if (basicInfo.ScrollTop == basicInfo.S_V) {                        $("#" + setting.nekoname)                            .addClass("showMsg")                    } else {                        $("#" + setting.nekoname)                            .removeClass("showMsg");                        $("#" + setting.nekoname)                            .attr("data-msg", setting.hoverMsg);                    }                });            this.click(function (e) {                btf.scrollToDest(0, 500)            });            $("#" + setting.nekoname)                .click(function () {                    btf.scrollToDest(0, 500)                });            return this;        }    })(jQuery);    $(document).ready(function () {        //部分自定义        $("#myscoll").nekoScroll({                bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效                borderRadius: '2em',                zoom: 0.9            }        );        //自定义（去掉以下注释，并注释掉其他的查看效果）        /*        $("#myscoll").nekoScroll({            nekoname:'neko1', //nekoname，相当于id            nekoImg:'img/猫咪.png', //neko的背景图片            scImg:"img/绳1.png", //绳子的背景图片            bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效            zoom:0.9, //绳子长度的缩放值            hoverMsg:'你好~喵', //鼠标浮动到neko上方的对话框信息            right:'100px', //距离页面右边的距离            fontFamily:'楷体', //对话框字体            fontSize:'14px', //对话框字体的大小            color:'#1e90ff', //对话框字体颜色            scroWidth:'8px', //绳子的宽度            z_index:100, //不用解释了吧            during:1200, //从顶部到底部滑动的时长        });        */    })}]]></content>
       
     </entry>
     
@@ -358,6 +314,17 @@
     
     <entry>
       <title></title>
+      <link href="/js/readPercent.js"/>
+      <url>/js/readPercent.js</url>
+      
+        <content type="html"><![CDATA[window.onscroll = percent;// 执行函数// 页面百分比function percent() {    let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度        b = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight) - document.documentElement.clientHeight, // 整个网页高度        result = Math.round(a / b * 100), // 计算百分比        up = document.querySelector("#go-up") // 获取按钮    if (result <= 95) {        up.childNodes[0].style.display = 'none'        up.childNodes[1].style.display = 'block'        up.childNodes[1].innerHTML = result;    } else {        up.childNodes[1].style.display = 'none'        up.childNodes[0].style.display = 'block'    }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/kslink.js"/>
       <url>/js/kslink.js</url>
       
@@ -369,10 +336,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/readPercent.js"/>
-      <url>/js/readPercent.js</url>
+      <link href="/js/cat.js"/>
+      <url>/js/cat.js</url>
       
-        <content type="html"><![CDATA[window.onscroll = percent;// 执行函数// 页面百分比function percent() {    let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度        b = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight) - document.documentElement.clientHeight, // 整个网页高度        result = Math.round(a / b * 100), // 计算百分比        up = document.querySelector("#go-up") // 获取按钮    if (result <= 95) {        up.childNodes[0].style.display = 'none'        up.childNodes[1].style.display = 'block'        up.childNodes[1].innerHTML = result;    } else {        up.childNodes[1].style.display = 'none'        up.childNodes[0].style.display = 'block'    }}]]></content>
+        <content type="html"><![CDATA[if (document.body.clientWidth > 992) {    function getBasicInfo() {        /* 窗口高度 */        var ViewH = $(window).height();        /* document高度 */        var DocH = $("body")[0].scrollHeight;        /* 滚动的高度 */        var ScrollTop = $(window).scrollTop();        /* 可滚动的高度 */        var S_V = DocH - ViewH;        var Band_H = ScrollTop / (DocH - ViewH) * 100;        return {            ViewH: ViewH,            DocH: DocH,            ScrollTop: ScrollTop,            Band_H: Band_H,            S_V: S_V        }    };    function show(basicInfo) {        if (basicInfo.ScrollTop > 0.001) {            $(".neko").css('display', 'block');        } else {            $(".neko").css('display', 'none');        }    }    (function ($) {        $.fn.nekoScroll = function (option) {            var defaultSetting = {                top: '0',                scroWidth: 6 + 'px',                z_index: 9999,                zoom: 0.9,                borderRadius: 5 + 'px',                right: 60 + 'px',                // 这里可以换为你喜欢的图片，例如我就换为了雪人，但是要抠图                nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",                hoverMsg: "喵喵喵~",                color: "#6f42c1",                during: 500,                blog_body: "body",            };            var setting = $.extend(defaultSetting, option);            var getThis = this.prop("className") !== "" ? "." + this.prop("className") : this.prop("id") !== "" ? "#" +                this.prop("id") : this.prop("nodeName");            if ($(".neko").length == 0) {                this.after("<div class=\"neko\" id=" + setting.nekoname + " data-msg=\"" + setting.hoverMsg + "\"></div>");            }            let basicInfo = getBasicInfo();            $(getThis)                .css({                    'position': 'fixed',                    'width': setting.scroWidth,                    'top': setting.top,                    'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                    'z-index': setting.z_index,                    'background-color': setting.bgcolor,                    "border-radius": setting.borderRadius,                    'right': setting.right,                    'background-image': 'url(' + setting.scImg + ')',                    'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                    'background-size': 'contain'                });            $("#" + setting.nekoname)                .css({                    'position': 'fixed',                    'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                    'z-index': setting.z_index * 10,                    'right': setting.right,                    'background-image': 'url(' + setting.nekoImg + ')',                });            show(getBasicInfo());            $(window)                .scroll(function () {                    let basicInfo = getBasicInfo();                    show(basicInfo);                    $(getThis)                        .css({                            'position': 'fixed',                            'width': setting.scroWidth,                            'top': setting.top,                            'height': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 + 'px',                            'z-index': setting.z_index,                            'background-color': setting.bgcolor,                            "border-radius": setting.borderRadius,                            'right': setting.right,                            'background-image': 'url(' + setting.scImg + ')',                            'background-image': '-webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent)', 'border-radius': '2em',                            'background-size': 'contain'                        });                    $("#" + setting.nekoname)                        .css({                            'position': 'fixed',                            'top': basicInfo.Band_H * setting.zoom * basicInfo.ViewH * 0.01 - 50 + 'px',                            'z-index': setting.z_index * 10,                            'right': setting.right,                            'background-image': 'url(' + setting.nekoImg + ')',                        });                    if (basicInfo.ScrollTop == basicInfo.S_V) {                        $("#" + setting.nekoname)                            .addClass("showMsg")                    } else {                        $("#" + setting.nekoname)                            .removeClass("showMsg");                        $("#" + setting.nekoname)                            .attr("data-msg", setting.hoverMsg);                    }                });            this.click(function (e) {                btf.scrollToDest(0, 500)            });            $("#" + setting.nekoname)                .click(function () {                    btf.scrollToDest(0, 500)                });            return this;        }    })(jQuery);    $(document).ready(function () {        //部分自定义        $("#myscoll").nekoScroll({                bgcolor: 'rgb(0 0 0 / .5)', //背景颜色，没有绳子背景图片时有效                borderRadius: '2em',                zoom: 0.9            }        );        //自定义（去掉以下注释，并注释掉其他的查看效果）        /*        $("#myscoll").nekoScroll({            nekoname:'neko1', //nekoname，相当于id            nekoImg:'img/猫咪.png', //neko的背景图片            scImg:"img/绳1.png", //绳子的背景图片            bgcolor:'#1e90ff', //背景颜色，没有绳子背景图片时有效            zoom:0.9, //绳子长度的缩放值            hoverMsg:'你好~喵', //鼠标浮动到neko上方的对话框信息            right:'100px', //距离页面右边的距离            fontFamily:'楷体', //对话框字体            fontSize:'14px', //对话框字体的大小            color:'#1e90ff', //对话框字体颜色            scroWidth:'8px', //绳子的宽度            z_index:100, //不用解释了吧            during:1200, //从顶部到底部滑动的时长        });        */    })}]]></content>
       
     </entry>
     
@@ -401,33 +368,22 @@
     
     
     <entry>
+      <title>轻音，武道馆</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[<div class="addBtn"><button onclick="leonus.linkCom()"><i class="fa-solid fa-circle-plus"></i>快速申请 (默认样式)</button> <button onclick="leonus.linkCom(&quot;bf&quot;)"><i class="fa-solid fa-circle-plus"></i>快速申请 (Butterfly)</button></div><link rel="stylesheet" href="/css/kslink.css"><script src="/js/kslink.js"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/js/share.js"/>
       <url>/js/share.js</url>
       
         <content type="html"><![CDATA[// 分享本页function share_() {    let url = window.location.origin + window.location.pathname    try {        // 截取标题        var title = document.title;        var subTitle = title.endsWith("| 轻音博客") ? title.substring(0, title.length - 14) : title;        navigator.clipboard.writeText('轻音博客的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');        new Vue({            data: function () {                this.$notify({                    title: "成功复制分享信息🎉",                    message: "您现在可以通过粘贴直接跟小伙伴分享了！",                    position: 'top-left',                    offset: 50,                    showClose: true,                    type: "success",                    duration: 5000                });                // return { visible: false }            }        })    } catch (err) {        console.error('复制失败！', err);    }    // new ClipboardJS(".share", { text: function () { return '标题：' + document.title + '\n链接：' + url } });    // btf.snackbarShow("本页链接已复制到剪切板，快去分享吧~")}// 防抖function share() {    debounce(share_, 300);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/js/title.js"/>
-      <url>/js/title.js</url>
-      
-        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {    if (document.hidden) {        //离开当前页面时标签显示内容        document.title = '👀跑哪里去了~';        clearTimeout(titleTime);    } else {        //返回当前页面时标签显示内容        document.title = '🐖抓到你啦～';        //两秒后变回正常标题        titleTime = setTimeout(function () {            document.title = OriginTitile;        }, 2000);    }});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>轻音</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -445,9 +401,53 @@
     
     
     <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电影</title>
       <link href="/movies/index.html"/>
       <url>/movies/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
+      
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {    if (document.hidden) {        //离开当前页面时标签显示内容        document.title = '👀跑哪里去了~';        clearTimeout(titleTime);    } else {        //返回当前页面时标签显示内容        document.title = '🐖抓到你啦～';        //两秒后变回正常标题        titleTime = setTimeout(function () {            document.title = OriginTitile;        }, 2000);    }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>轻音</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
