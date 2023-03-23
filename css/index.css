@@ -5222,7 +5222,7 @@ mjx-container[display],
   border-radius: 5px !important;
 }
 [data-theme="dark"] #web_bg {
-  background: var(--darkmode-bg);
+  background: url(https://picbed.taoyaopc.live/img/夜兰.webp);
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -7773,7 +7773,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp)
+  background: url(https://picbed.taoyaopc.live/img/胡桃/胡桃02.webp)
     no-repeat center center;
   background-size: cover;
 }
