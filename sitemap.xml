@@ -209,15 +209,6 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/box/nav/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.taoyaopc.live/box/animation/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
@@ -227,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/life/games/index.html</loc>
+    <loc>https://www.taoyaopc.live/box/nav/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -245,6 +236,24 @@
   </url>
   
   <url>
+    <loc>https://www.taoyaopc.live/personal/about/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/life/games/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.taoyaopc.live/life/music/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
@@ -254,7 +263,16 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/personal/about/index.html</loc>
+    <loc>https://www.taoyaopc.live/personal/bb/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/personal/love/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -272,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/personal/love/index.html</loc>
+    <loc>https://www.taoyaopc.live/site/census/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -300,24 +318,6 @@
   
   <url>
     <loc>https://www.taoyaopc.live/site/time/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.taoyaopc.live/site/census/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.taoyaopc.live/personal/bb/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
