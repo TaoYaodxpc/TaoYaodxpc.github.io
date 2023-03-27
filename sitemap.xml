@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/box/animation/index.html</loc>
+    <loc>https://www.taoyaopc.live/tags/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -209,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/tags/index.html</loc>
+    <loc>https://www.taoyaopc.live/box/animation/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -245,24 +245,6 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/social/fcircle/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.taoyaopc.live/life/movies/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.taoyaopc.live/personal/about/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
@@ -281,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/social/link/index.html</loc>
+    <loc>https://www.taoyaopc.live/life/movies/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -299,7 +281,25 @@
   </url>
   
   <url>
+    <loc>https://www.taoyaopc.live/social/fcircle/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.taoyaopc.live/personal/love/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/site/census/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/site/census/index.html</loc>
+    <loc>https://www.taoyaopc.live/social/link/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -369,6 +369,13 @@
 
   
   <url>
+    <loc>https://www.taoyaopc.live/categories/Hexo/</loc>
+    <lastmod>2023-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.taoyaopc.live/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2023-03-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -376,7 +383,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/categories/Hexo/</loc>
+    <loc>https://www.taoyaopc.live/categories/Java/</loc>
     <lastmod>2023-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -391,13 +398,6 @@
   
   <url>
     <loc>https://www.taoyaopc.live/categories/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2023-03-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.taoyaopc.live/categories/Java/</loc>
     <lastmod>2023-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
