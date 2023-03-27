@@ -209,15 +209,6 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/box/animation/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.taoyaopc.live/box/gallery/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
@@ -236,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/life/music/index.html</loc>
+    <loc>https://www.taoyaopc.live/box/animation/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -263,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/site/census/index.html</loc>
+    <loc>https://www.taoyaopc.live/life/music/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -290,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/site/time/index.html</loc>
+    <loc>https://www.taoyaopc.live/personal/love/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -299,7 +290,16 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/personal/love/index.html</loc>
+    <loc>https://www.taoyaopc.live/site/census/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/site/time/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -376,13 +376,6 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/categories/Java/</loc>
-    <lastmod>2023-03-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.taoyaopc.live/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2023-03-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -391,6 +384,13 @@
   
   <url>
     <loc>https://www.taoyaopc.live/categories/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2023-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/categories/Java/</loc>
     <lastmod>2023-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
