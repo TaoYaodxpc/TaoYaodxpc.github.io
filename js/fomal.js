@@ -3175,7 +3175,7 @@ if (localStorage.getItem("blogbg") != undefined) {
 } else {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: url(https://picbed.taoyaopc.live/img/hutao/hutao01.webp);
-    --darkmode-bg:url(https://picbed.taoyaopc.live/img/linghua/yuanshen1.webp);
+    --darkmode-bg: url(https://picbed.taoyaopc.live/img/linghua/yuanshen1.webp);
     --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
     --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
   }`;
