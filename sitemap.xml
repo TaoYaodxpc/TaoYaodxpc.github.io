@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.taoyaopc.live/posts/0.html</loc>
+    <loc>https://www.taoyaopc.live/posts/6d608cd2.html</loc>
     
     <lastmod>2023-06-30</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/posts/0.html</loc>
+    <loc>https://www.taoyaopc.live/posts/6d608cd2.html</loc>
     
     <lastmod>2023-06-30</lastmod>
     
@@ -32,15 +32,6 @@
     <loc>https://www.taoyaopc.live/charts/index.html</loc>
     
     <lastmod>2023-04-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.taoyaopc.live/box/animation/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -74,25 +65,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/personal/about/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.taoyaopc.live/life/games/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.taoyaopc.live/personal/bb/index.html</loc>
+    <loc>https://www.taoyaopc.live/site/census/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -110,7 +83,43 @@
   </url>
   
   <url>
+    <loc>https://www.taoyaopc.live/life/games/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/personal/about/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/box/animation/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.taoyaopc.live/life/movies/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/personal/bb/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -128,15 +137,6 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/social/link/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.taoyaopc.live/social/fcircle/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.live/site/census/index.html</loc>
+    <loc>https://www.taoyaopc.live/social/link/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -181,6 +181,34 @@
   </url>
 
   
+  <url>
+    <loc>https://www.taoyaopc.live/tags/Java/</loc>
+    <lastmod>2023-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/tags/Spring/</loc>
+    <lastmod>2023-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.live/tags/SpringCloud/</loc>
+    <lastmod>2023-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://www.taoyaopc.live/categories/%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2023-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
