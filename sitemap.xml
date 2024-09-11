@@ -281,15 +281,6 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.tech/box/gallery/index.html</loc>
-    
-    <lastmod>2023-03-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.taoyaopc.tech/box/nav/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
@@ -299,7 +290,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.tech/life/games/index.html</loc>
+    <loc>https://www.taoyaopc.tech/box/gallery/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -317,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.tech/personal/about/index.html</loc>
+    <loc>https://www.taoyaopc.tech/life/games/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -335,7 +326,16 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.tech/personal/love/index.html</loc>
+    <loc>https://www.taoyaopc.tech/personal/about/index.html</loc>
+    
+    <lastmod>2023-03-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.tech/personal/bb/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -353,7 +353,7 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.tech/personal/bb/index.html</loc>
+    <loc>https://www.taoyaopc.tech/personal/love/index.html</loc>
     
     <lastmod>2023-03-07</lastmod>
     
@@ -407,6 +407,27 @@
 
   
   <url>
+    <loc>https://www.taoyaopc.tech/tags/Html/</loc>
+    <lastmod>2024-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.tech/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2024-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.taoyaopc.tech/tags/CSS/</loc>
+    <lastmod>2024-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.taoyaopc.tech/tags/Java/</loc>
     <lastmod>2024-09-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -442,20 +463,6 @@
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.tech/tags/Html/</loc>
-    <lastmod>2024-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.taoyaopc.tech/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2024-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.taoyaopc.tech/tags/Spring/</loc>
     <lastmod>2024-09-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -469,24 +476,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://www.taoyaopc.tech/tags/CSS/</loc>
-    <lastmod>2024-09-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
-    <loc>https://www.taoyaopc.tech/categories/Java/</loc>
+    <loc>https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2024-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://www.taoyaopc.tech/categories/Java/</loc>
     <lastmod>2024-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
