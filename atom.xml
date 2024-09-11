@@ -3,11 +3,11 @@
   <title>TaoYaopc🍎</title>
   
   
-  <link href="https://www.taoyaopc.live/atom.xml" rel="self"/>
+  <link href="https://www.taoyaopc.tech/atom.xml" rel="self"/>
   
-  <link href="https://www.taoyaopc.live/"/>
+  <link href="https://www.taoyaopc.tech/"/>
   <updated>2023-10-09T12:47:32.740Z</updated>
-  <id>https://www.taoyaopc.live/</id>
+  <id>https://www.taoyaopc.tech/</id>
   
   <author>
     <name>TaoYaopc🍎</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Vue3 入门</title>
-    <link href="https://www.taoyaopc.live/posts/3ce3c172.html"/>
-    <id>https://www.taoyaopc.live/posts/3ce3c172.html</id>
+    <link href="https://www.taoyaopc.tech/posts/3ce3c172.html"/>
+    <id>https://www.taoyaopc.tech/posts/3ce3c172.html</id>
     <published>2023-10-06T16:00:00.000Z</published>
     <updated>2023-10-09T12:47:32.740Z</updated>
     
@@ -30,17 +30,17 @@
     
     
     
-    <category term="Web前端" scheme="https://www.taoyaopc.live/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    <category term="Web前端" scheme="https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Vue" scheme="https://www.taoyaopc.live/tags/Vue/"/>
+    <category term="Vue" scheme="https://www.taoyaopc.tech/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue 智慧商城项目</title>
-    <link href="https://www.taoyaopc.live/posts/5254e265.html"/>
-    <id>https://www.taoyaopc.live/posts/5254e265.html</id>
+    <link href="https://www.taoyaopc.tech/posts/5254e265.html"/>
+    <id>https://www.taoyaopc.tech/posts/5254e265.html</id>
     <published>2023-09-26T16:00:00.000Z</published>
     <updated>2023-10-07T15:46:07.269Z</updated>
     
@@ -51,17 +51,17 @@
     
     
     
-    <category term="Web前端" scheme="https://www.taoyaopc.live/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    <category term="Web前端" scheme="https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Vue" scheme="https://www.taoyaopc.live/tags/Vue/"/>
+    <category term="Vue" scheme="https://www.taoyaopc.tech/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>Vuex</title>
-    <link href="https://www.taoyaopc.live/posts/db4c4335.html"/>
-    <id>https://www.taoyaopc.live/posts/db4c4335.html</id>
+    <link href="https://www.taoyaopc.tech/posts/db4c4335.html"/>
+    <id>https://www.taoyaopc.tech/posts/db4c4335.html</id>
     <published>2023-09-01T00:00:00.000Z</published>
     <updated>2023-09-01T14:22:32.751Z</updated>
     
@@ -72,17 +72,17 @@
     
     
     
-    <category term="Web前端" scheme="https://www.taoyaopc.live/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    <category term="Web前端" scheme="https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Vue" scheme="https://www.taoyaopc.live/tags/Vue/"/>
+    <category term="Vue" scheme="https://www.taoyaopc.tech/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue 中级</title>
-    <link href="https://www.taoyaopc.live/posts/5254e265.html"/>
-    <id>https://www.taoyaopc.live/posts/5254e265.html</id>
+    <link href="https://www.taoyaopc.tech/posts/5254e265.html"/>
+    <id>https://www.taoyaopc.tech/posts/5254e265.html</id>
     <published>2023-08-27T00:00:00.000Z</published>
     <updated>2023-09-01T14:20:43.976Z</updated>
     
@@ -93,17 +93,17 @@
     
     
     
-    <category term="Web前端" scheme="https://www.taoyaopc.live/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    <category term="Web前端" scheme="https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Vue" scheme="https://www.taoyaopc.live/tags/Vue/"/>
+    <category term="Vue" scheme="https://www.taoyaopc.tech/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>Vue 基础</title>
-    <link href="https://www.taoyaopc.live/posts/2b1bd303.html"/>
-    <id>https://www.taoyaopc.live/posts/2b1bd303.html</id>
+    <link href="https://www.taoyaopc.tech/posts/2b1bd303.html"/>
+    <id>https://www.taoyaopc.tech/posts/2b1bd303.html</id>
     <published>2023-07-27T00:00:00.000Z</published>
     <updated>2023-07-27T08:43:31.047Z</updated>
     
@@ -114,17 +114,17 @@
     
     
     
-    <category term="Web前端" scheme="https://www.taoyaopc.live/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    <category term="Web前端" scheme="https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Vue" scheme="https://www.taoyaopc.live/tags/Vue/"/>
+    <category term="Vue" scheme="https://www.taoyaopc.tech/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>媒资管理模块</title>
-    <link href="https://www.taoyaopc.live/posts/6d608cd2.html"/>
-    <id>https://www.taoyaopc.live/posts/6d608cd2.html</id>
+    <link href="https://www.taoyaopc.tech/posts/6d608cd2.html"/>
+    <id>https://www.taoyaopc.tech/posts/6d608cd2.html</id>
     <published>2023-06-29T16:00:00.000Z</published>
     <updated>2023-07-27T08:45:42.523Z</updated>
     
@@ -135,21 +135,21 @@
     
     
     
-    <category term="项目" scheme="https://www.taoyaopc.live/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="项目" scheme="https://www.taoyaopc.tech/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/tags/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/tags/Java/"/>
     
-    <category term="Spring" scheme="https://www.taoyaopc.live/tags/Spring/"/>
+    <category term="Spring" scheme="https://www.taoyaopc.tech/tags/Spring/"/>
     
-    <category term="SpringCloud" scheme="https://www.taoyaopc.live/tags/SpringCloud/"/>
+    <category term="SpringCloud" scheme="https://www.taoyaopc.tech/tags/SpringCloud/"/>
     
   </entry>
   
   <entry>
     <title>内容管理模块</title>
-    <link href="https://www.taoyaopc.live/posts/58d4e84e.html"/>
-    <id>https://www.taoyaopc.live/posts/58d4e84e.html</id>
+    <link href="https://www.taoyaopc.tech/posts/58d4e84e.html"/>
+    <id>https://www.taoyaopc.tech/posts/58d4e84e.html</id>
     <published>2023-06-28T16:00:00.000Z</published>
     <updated>2023-07-27T08:45:31.378Z</updated>
     
@@ -160,21 +160,21 @@
     
     
     
-    <category term="项目" scheme="https://www.taoyaopc.live/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="项目" scheme="https://www.taoyaopc.tech/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/tags/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/tags/Java/"/>
     
-    <category term="Spring" scheme="https://www.taoyaopc.live/tags/Spring/"/>
+    <category term="Spring" scheme="https://www.taoyaopc.tech/tags/Spring/"/>
     
-    <category term="SpringCloud" scheme="https://www.taoyaopc.live/tags/SpringCloud/"/>
+    <category term="SpringCloud" scheme="https://www.taoyaopc.tech/tags/SpringCloud/"/>
     
   </entry>
   
   <entry>
     <title>项目基础环境搭建</title>
-    <link href="https://www.taoyaopc.live/posts/a8b753fd.html"/>
-    <id>https://www.taoyaopc.live/posts/a8b753fd.html</id>
+    <link href="https://www.taoyaopc.tech/posts/a8b753fd.html"/>
+    <id>https://www.taoyaopc.tech/posts/a8b753fd.html</id>
     <published>2023-06-26T16:00:00.000Z</published>
     <updated>2023-07-20T15:16:48.731Z</updated>
     
@@ -185,21 +185,21 @@
     
     
     
-    <category term="项目" scheme="https://www.taoyaopc.live/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="项目" scheme="https://www.taoyaopc.tech/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/tags/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/tags/Java/"/>
     
-    <category term="Spring" scheme="https://www.taoyaopc.live/tags/Spring/"/>
+    <category term="Spring" scheme="https://www.taoyaopc.tech/tags/Spring/"/>
     
-    <category term="SpringCloud" scheme="https://www.taoyaopc.live/tags/SpringCloud/"/>
+    <category term="SpringCloud" scheme="https://www.taoyaopc.tech/tags/SpringCloud/"/>
     
   </entry>
   
   <entry>
     <title>CSS 基础</title>
-    <link href="https://www.taoyaopc.live/posts/58d5387c.html"/>
-    <id>https://www.taoyaopc.live/posts/58d5387c.html</id>
+    <link href="https://www.taoyaopc.tech/posts/58d5387c.html"/>
+    <id>https://www.taoyaopc.tech/posts/58d5387c.html</id>
     <published>2023-04-20T00:30:00.000Z</published>
     <updated>2023-04-25T03:08:41.415Z</updated>
     
@@ -210,19 +210,19 @@
     
     
     
-    <category term="Web前端" scheme="https://www.taoyaopc.live/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    <category term="Web前端" scheme="https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Html" scheme="https://www.taoyaopc.live/tags/Html/"/>
+    <category term="Html" scheme="https://www.taoyaopc.tech/tags/Html/"/>
     
-    <category term="CSS" scheme="https://www.taoyaopc.live/tags/CSS/"/>
+    <category term="CSS" scheme="https://www.taoyaopc.tech/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>HTML 基础</title>
-    <link href="https://www.taoyaopc.live/posts/b8b839b9.html"/>
-    <id>https://www.taoyaopc.live/posts/b8b839b9.html</id>
+    <link href="https://www.taoyaopc.tech/posts/b8b839b9.html"/>
+    <id>https://www.taoyaopc.tech/posts/b8b839b9.html</id>
     <published>2023-04-16T16:00:00.000Z</published>
     <updated>2023-04-22T07:58:54.486Z</updated>
     
@@ -233,19 +233,19 @@
     
     
     
-    <category term="Web前端" scheme="https://www.taoyaopc.live/categories/Web%E5%89%8D%E7%AB%AF/"/>
+    <category term="Web前端" scheme="https://www.taoyaopc.tech/categories/Web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Html" scheme="https://www.taoyaopc.live/tags/Html/"/>
+    <category term="Html" scheme="https://www.taoyaopc.tech/tags/Html/"/>
     
-    <category term="前端" scheme="https://www.taoyaopc.live/tags/%E5%89%8D%E7%AB%AF/"/>
+    <category term="前端" scheme="https://www.taoyaopc.tech/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>多级缓存</title>
-    <link href="https://www.taoyaopc.live/posts/9c74e32c.html"/>
-    <id>https://www.taoyaopc.live/posts/9c74e32c.html</id>
+    <link href="https://www.taoyaopc.tech/posts/9c74e32c.html"/>
+    <id>https://www.taoyaopc.tech/posts/9c74e32c.html</id>
     <published>2023-04-09T15:00:00.000Z</published>
     <updated>2023-04-15T01:51:38.119Z</updated>
     
@@ -256,15 +256,15 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>Redis分布式缓存</title>
-    <link href="https://www.taoyaopc.live/posts/d4758cbd.html"/>
-    <id>https://www.taoyaopc.live/posts/d4758cbd.html</id>
+    <link href="https://www.taoyaopc.tech/posts/d4758cbd.html"/>
+    <id>https://www.taoyaopc.tech/posts/d4758cbd.html</id>
     <published>2023-04-05T07:30:00.000Z</published>
     <updated>2023-04-06T13:23:07.931Z</updated>
     
@@ -275,15 +275,15 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>Redis实战篇2</title>
-    <link href="https://www.taoyaopc.live/posts/741809b2.html"/>
-    <id>https://www.taoyaopc.live/posts/741809b2.html</id>
+    <link href="https://www.taoyaopc.tech/posts/741809b2.html"/>
+    <id>https://www.taoyaopc.tech/posts/741809b2.html</id>
     <published>2023-03-29T08:30:00.000Z</published>
     <updated>2023-04-04T14:55:25.757Z</updated>
     
@@ -294,19 +294,19 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/tags/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/tags/Java/"/>
     
-    <category term="Redis" scheme="https://www.taoyaopc.live/tags/Redis/"/>
+    <category term="Redis" scheme="https://www.taoyaopc.tech/tags/Redis/"/>
     
   </entry>
   
   <entry>
     <title>Redis实战篇1</title>
-    <link href="https://www.taoyaopc.live/posts/a6b15897.html"/>
-    <id>https://www.taoyaopc.live/posts/a6b15897.html</id>
+    <link href="https://www.taoyaopc.tech/posts/a6b15897.html"/>
+    <id>https://www.taoyaopc.tech/posts/a6b15897.html</id>
     <published>2023-03-25T08:30:00.000Z</published>
     <updated>2023-03-29T14:34:04.006Z</updated>
     
@@ -317,15 +317,15 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>Redis 基础篇</title>
-    <link href="https://www.taoyaopc.live/posts/f52b4fc3.html"/>
-    <id>https://www.taoyaopc.live/posts/f52b4fc3.html</id>
+    <link href="https://www.taoyaopc.tech/posts/f52b4fc3.html"/>
+    <id>https://www.taoyaopc.tech/posts/f52b4fc3.html</id>
     <published>2023-03-19T08:30:30.000Z</published>
     <updated>2023-03-21T06:15:23.655Z</updated>
     
@@ -336,15 +336,15 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>分布式事务</title>
-    <link href="https://www.taoyaopc.live/posts/cdcc4eae.html"/>
-    <id>https://www.taoyaopc.live/posts/cdcc4eae.html</id>
+    <link href="https://www.taoyaopc.tech/posts/cdcc4eae.html"/>
+    <id>https://www.taoyaopc.tech/posts/cdcc4eae.html</id>
     <published>2023-03-18T08:00:00.000Z</published>
     <updated>2023-03-21T06:15:23.666Z</updated>
     
@@ -355,15 +355,15 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>Java 环境配置</title>
-    <link href="https://www.taoyaopc.live/posts/4c8e8e1b.html"/>
-    <id>https://www.taoyaopc.live/posts/4c8e8e1b.html</id>
+    <link href="https://www.taoyaopc.tech/posts/4c8e8e1b.html"/>
+    <id>https://www.taoyaopc.tech/posts/4c8e8e1b.html</id>
     <published>2023-03-16T14:46:00.000Z</published>
     <updated>2023-03-21T06:15:23.633Z</updated>
     
@@ -374,15 +374,15 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>微服务保护</title>
-    <link href="https://www.taoyaopc.live/posts/3b2912fc.html"/>
-    <id>https://www.taoyaopc.live/posts/3b2912fc.html</id>
+    <link href="https://www.taoyaopc.tech/posts/3b2912fc.html"/>
+    <id>https://www.taoyaopc.tech/posts/3b2912fc.html</id>
     <published>2023-03-16T05:00:00.000Z</published>
     <updated>2023-03-21T06:15:23.680Z</updated>
     
@@ -393,15 +393,15 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>Idea 快捷键</title>
-    <link href="https://www.taoyaopc.live/posts/2f8dc7f4.html"/>
-    <id>https://www.taoyaopc.live/posts/2f8dc7f4.html</id>
+    <link href="https://www.taoyaopc.tech/posts/2f8dc7f4.html"/>
+    <id>https://www.taoyaopc.tech/posts/2f8dc7f4.html</id>
     <published>2023-03-14T13:30:00.000Z</published>
     <updated>2023-03-21T06:15:23.636Z</updated>
     
@@ -412,15 +412,15 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
   
   <entry>
     <title>ElasticSearch3</title>
-    <link href="https://www.taoyaopc.live/posts/72dc8cc7.html"/>
-    <id>https://www.taoyaopc.live/posts/72dc8cc7.html</id>
+    <link href="https://www.taoyaopc.tech/posts/72dc8cc7.html"/>
+    <id>https://www.taoyaopc.tech/posts/72dc8cc7.html</id>
     <published>2023-03-14T12:30:00.000Z</published>
     <updated>2023-03-21T06:15:23.626Z</updated>
     
@@ -437,7 +437,7 @@
     
     
     
-    <category term="Java" scheme="https://www.taoyaopc.live/categories/Java/"/>
+    <category term="Java" scheme="https://www.taoyaopc.tech/categories/Java/"/>
     
     
   </entry>
